@@ -1,0 +1,29 @@
+---
+layout: default
+title: Balaji Srinivasan
+---
+
+<div id='page-description'>
+<center>
+  Hi there! I'm Balaji . I work at <a href='http://www.india.ford.com/'>Ford Motor Company</a> as a application developer and live in Chennai, India. <br>
+  I love coding!! I love dreaming!! I love doing crazy things!!</center>
+  
+</div>
+
+<div class='posts'>
+  {% for post in site.posts %}
+    {% unless post.next %}
+      <h3 class='year'>{{ post.date | date: '%Y' }}</h3>
+    {% else %}
+      {% capture year  %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h3 class='year'>{{ post.date | date: '%Y' }}</h3>
+      {% endif %}
+    {% endunless %}
+    <a href='{{ post.url }}'>
+      <span class='title'>{{ post.title }}{{post.tags}}</span>
+      <span class='published-on'>{{ post.date | date_to_string }}</span>
+    </a>
+  {% endfor %}
+</div>
