@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Books
-date:  2014-08-30 
+date:  2014-11-14 
 ---
 
 This a collections of books I have read until now 
 
 
 <h2>Fiction</h2>
-- [The Sense of an Ending](https://www.goodreads.com/book/show/10746542-the-sense-of-an-ending)
+- [The Sense of an Ending](https://www.goodreads.com/book/show/10746542-the-sense-of-an-ending), by Julian Barnes
 - [Life is What You Make it](https://www.goodreads.com/book/show/10863941-life-is-what-you-make-it), by Preeti Shenoy
 - [Digital Fortress](https://www.goodreads.com/book/show/11125.Digital_Fortress), by Dan Brown
 - [I Too Had a Love Story](https://www.goodreads.com/book/show/7105461-i-too-had-a-love-story), by Ravinder Singh
