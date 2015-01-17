@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Target GA Tech
+title: Hurray Results Came
 date: 2014-12-26
 categories: omscs
 
