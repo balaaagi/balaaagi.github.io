@@ -31,11 +31,11 @@ Then I slept very happily. Next morning conveyed the happy news to parents they 
 When reaching office only I realized that the message to Madhava was not delivered. Actually October 8 is his birthday. I called to wish him but din wish him first instead started with this news and was very thankful for him for his help for the application also wished him for becoming old more...
 
 As people started coming to office first approached their desk and just showed the decision letter to them. Indeed was very happy that day.
-*[Benita](https://www.facebook.com/benita.gabriella)- English mummy who corrected my grammer and [Sukanya](https://www.facebook.com/sukanya.kalaichelvan)
-*[Santio](https://www.facebook.com/santio.ruban)- English sir who helped in making my huge huge huge huge essay to the required size
-*[Alok](https://www.facebook.com/alok.rout)- Guy who is gud at english also always point at my english mistakes.Helped me in refining my application.
-*Satish- My manager who is my boss also was one who wrote a letter of recommendation for my application amidst his tight schedule.
+* [Benita](https://www.facebook.com/benita.gabriella)- English mummy who corrected my grammer and [Sukanya](https://www.facebook.com/sukanya.kalaichelvan)
+* [Santio](https://www.facebook.com/santio.ruban)- English sir who helped in making my huge huge huge huge essay to the required size
+* [Alok](https://www.facebook.com/alok.rout)- Guy who is gud at english also always point at my english mistakes.Helped me in refining my application.
+* Satish- My manager who is my boss also was one who wrote a letter of recommendation for my application amidst his tight schedule.
 
-##I would like to Thank You all of the people who have helped getting this admit. Please forgive in case if I have missed anyone name in the list 
+####I would like to Thank You all of the people who have helped getting this admit. Please forgive in case if I have missed anyone name in the list 
+<center>###THANKS ALL</center>
 
-###THANKS ALL
