@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Target GA Tech
-date: 2014-12-25 
-categories: omscs
+title: Journey till now
+date: 2010-09-28 19:41:23.000000000 +05:30
+categories: blog
+tags: life
 ---
 
 From the day I was born I think I was studious(lol).I don like it even if I think how I was when I was young like tat I simply laugh seeing me now.But it was those hard workz  tat has brought me to these many distances of my life.

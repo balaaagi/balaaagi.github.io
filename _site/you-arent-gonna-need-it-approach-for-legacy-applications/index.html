@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>You aren't gonna need it approach for legacy applications</title>
+
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="alternate" type="application/rss+xml" title="Balaji Srinivasan" href="http://blog.balaaagi.me/feed.xml">
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <h1 class='title'><a href="/">Balaji Srinivasan</a></h1>
+        <span class='links align-right'>
+          <a href='/omscs/'>OMSCS</a>
+          <a href='/commonplace/'>CommonPlace</a>
+          <a href='http://github.com/balaaagi' target='_blank'>Code</a>
+          <a href='http://balaaagi.me' target='_blank'>About Me</a>
+        </span>
+      </div>
+      <div class='site'>
+
+        <div class='post'>
+  <h2 class='title'>You aren't gonna need it approach for legacy applications</h2>
+  <p class='meta'>15 Dec 2013</p>
+
+  <div class='content'>
+  <p>Recently I learnt about one more agile terminology. Eventhough my project is following <a href="http://en.wikipedia.org/wiki/Waterfall_model">Classic SDLC</a> I am expediting agile methodolgies like <a href="http://en.wikipedia.org/wiki/Test-driven_development">TDD</a> , <a href="http://en.wikipedia.org/wiki/Kanban_%28development%29">Kanban</a> and few more still expediting. <br />
+<strong>Why am I doing this?</strong><br />
+<em>Just to make my job interesting by myself and set myself on par with real industry</em>
+<br /></p>
+
+<p>Today I just learnt one another term which is used in <a href="http://en.wikipedia.org/wiki/Extreme_programming">XP</a>. The term is  <strong>YAGNI</strong>. I got know such a term exist from a quora <a href="http://www.quora.com/Computer-Programming/Do-you-respect-the-YAGNI-principle-when-coding/answer/Kiran-Gangadharan?share=1">question</a>.</p>
+
+<p>Maybe I dunno the term alone but once i read about it I came to know this is very much applying in my daily job of writing code.</p>
+
+<p>YAGNI stands for <strong>You aren’t gonna need it!!</strong>. I learnt more about it from the Quora <a href="http://www.quora.com/Computer-Programming/Do-you-respect-the-YAGNI-principle-when-coding/answer/Kiran-Gangadharan?share=1">question</a> and <a href="http://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">Wikipedia</a>.</p>
+
+<p><strong>So how this applies to my daily job?</strong></p>
+
+<p>I develop for a legacy applications which has been live in production for more than seven years. In order to make my job interesting and leverage my Software development skills I try different ways/methodologies to do development.</p>
+
+<p>So when developing in AGILE we focus on iterations to make users see the product with minimal working functionalities and improve them over the iterations. In that case we will be focussing only on the requirements and we won’t be developing additional features or add additional codes which may be useful in future.</p>
+
+<p>But currently I am unable to do this with my development work since legacy applications run across various countries with same flow. So now when I change a part of code or add a new piece of code to existing part I may have to consider not following the YAGNI principle. Since legacy applications developments usually happens(as far as I know) by tranforming the existing flow of logic from one technology(Initial old technology) to latest new technology. Few of them happens by writing from scratch which just provides the functionalities, whereas most of them follows transforming the logic into different programming language. As result of this adding new features is having great impact on exiting live code.
+For example lets consider a new feature of developing a interface from legacy system to a financial system. In this case when I develop the new interface feature I have consider writing code for all the scenarios in which the existing legacy system works(eg.countrywise).Even though the interface might/won’t be available in future. 
+So writing such codes for legacy applications makes the development process more complex by unit testing a piece of code that won’t be used when it goes live as part of this release.This has following impacts directly
+*Delivery time may get delayed. <br />
+*Users may not be able to see the feature on time.<br />
+*Developer’s focus on current deliverables shift to a more generalized solution which may not be thought during the analysis/design phase.</p>
+
+<p>From management perspective they want the feature to be more generic such that write once deploy anywhere. But for applications where the logic has been merely transformed from legacy code this may not be possible.</p>
+
+<p>I am facing the above issue very much in my development nowadays…..There are two solutions for my problems
+*Either follow AGILE process completely where our focus completely on current release alone so developer need not think about future implementations
+*Rewrite the code completely with more object oriented language such the implementations are so easy with minor tweaks.</p>
+
+
+  </div>
+
+  <div id='prev-next-nav'>
+    <div class='prev'>
+    
+      <a href='/blog/hacker-school-may-be-my-next-target'>Previous post</a>
+    
+    &nbsp;
+    </div>
+    <div class='archives'>
+      <a href='/'>Archives</a>
+    </div>
+    <div class='next'>
+    
+    <a href='/blog/you-arent-gonna-need-it-approach-for-legacy-applications'>Next post</a>
+    
+    </div>
+  </div>
+
+  <div class='social-share'>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.balaaagi.me/you-arent-gonna-need-it-approach-for-legacy-applications" data-text="You aren't gonna need it approach for legacy applications" data-via='balaaagi' data-count="horizontal">Share on Twitter</a>
+  </div>
+
+  <div id="disqus_thread"></div>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'balajiblog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+      </div> <!-- /site -->
+      <div class='footer'>Powered by <a href='http://jekyllrb.com'>Jekyll</a>. Get this theme <a href="https://github.com/nithinbekal/nithinbekal.github.io/">here</a>.</div>
+    </div> <!-- /container -->
+
+  </body>
+</html>
