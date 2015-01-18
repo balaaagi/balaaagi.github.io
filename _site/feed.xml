@@ -7,6 +7,91 @@
     <atom:link href="http://blog.balaaagi.me/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Awesome Assignment to learn Git</title>
+        <description>&lt;p&gt;It’s been nearly two weeks in the course and the journey so far has been so awesome.
+With assignments getting started feeling very very excited to learn things
+So in the Software Development Process course second assignment is to prove our ability for using &lt;a href=&quot;http://git-scm.com/&quot;&gt;git&lt;/a&gt; which is one of the best version control tool in the world.&lt;/p&gt;
+
+&lt;p&gt;I have been using git for past two years after learning it from online and using it effectively in Hackathons.
+But my usage was very limited compared to the real features it has.
+This assignment made me to make myself to learn more about git.&lt;/p&gt;
+
+&lt;p&gt;The assignment is provided with private repo in &lt;a href=&quot;https://github.com&quot;&gt;Github&lt;/a&gt; for the course students alone. For each students a private repository is created. 
+I also came to know about the cheat sheet of git commands from &lt;a href=&quot;https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The assignment asked to perform a set of activities. It has more steps and activities. At the end we need to confirm if our Network graph from our Github should match with the one they have provided. In case if we have missed any steps obviously the graph would be wrong and we may not score well. &lt;/p&gt;
+
+&lt;p&gt;In order to score well I ensured that I practise the steps in few repos multiple time to ensure that I get correct graph. During this course I missed of lot things because I was unaware of the commands. By practising in other repos before submitting my assignment ensured that I learnt a lot of commands which are required for better colloborations among team members when working on &lt;a href=&quot;https://github.com&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following are the commands I learnt &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;git stash&lt;/code&gt;-used when there is a dirty local and you want to pull. this command ensures that local repo hides those dirty&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git merge&lt;/code&gt;- used to merge a another branch to the current branch&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git push -u origin all&lt;/code&gt;- used to push all branches to the remote&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git branch&lt;/code&gt;- to know which branch currently we are working&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git checkout &amp;lt;branchname&amp;gt;&lt;/code&gt;- to checkout a branch i.e to change the current working branch&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git checkout -b &amp;lt;branchname&amp;gt; origin/&amp;lt;branchname&amp;gt;&lt;/code&gt;- to checkout the branch in remote and create the same branch locally when there are many branches in remote&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git pull &amp;lt;branchname&amp;gt;&lt;/code&gt;- to pull a branch from remote to the local&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git fetch origin&lt;/code&gt;- to fetch all the branches from remote to local&lt;/li&gt;
+  &lt;li&gt;To merge a conflict either modify the changes manually and use &lt;code&gt;git add &amp;lt;filename&amp;gt;&lt;/code&gt;. Later do the commit neccessary&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git tag&lt;/code&gt;- Lists the tags present in the repository. This is similar to Branches &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git tag -a &amp;lt;tag name&amp;gt; -m &amp;lt;message for the tag&amp;gt;&lt;/code&gt;- Add a tag to the repository&lt;/li&gt;
+  &lt;li&gt;Also learnt about &lt;a href=&quot;https://help.github.com/articles/about-repository-graphs/&quot;&gt;Network graph&lt;/a&gt; which will show the history of a branch of the repository.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This was really fun in doing this assignment. &lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 18 Jan 2015 00:00:00 +0530</pubDate>
+        <link>http://blog.balaaagi.me/omscs/awesomeassigntolearngit</link>
+        <guid isPermaLink="true">http://blog.balaaagi.me/omscs/awesomeassigntolearngit</guid>
+      </item>
+    
+      <item>
+        <title>Hurray Results Came</title>
+        <description>&lt;p&gt;Since I have applied the earlier they were able to evaluate my application in a very lesuirely way and update me on the status very soon. Yes!!&lt;/p&gt;
+
+&lt;p&gt;I received my application decision on October 7, 2014. The mail stated “Application decision is available”.&lt;/p&gt;
+
+&lt;p&gt;Was very confident this time at the same time was very tensed when I was clicking the link. 
+Literally I was shiverring in my chair. &lt;/p&gt;
+
+&lt;p&gt;On clicling applyweb portal URL I need to open the Decision available PDF to check my decision. &lt;/p&gt;
+
+&lt;p&gt;Until I find some positive words like ‘happy’,’glad’,’congratulations’ I din read the full decision letter.&lt;/p&gt;
+
+&lt;p&gt;Yeah those words were there. Immediately read the full letter and confirmed that I was successfully admitted to the program. &lt;/p&gt;
+
+&lt;p&gt;I was reading those decision letter multiple times that day. Was very glad and happy. Dunno who to say my happiness. Wanted to thank lot of people for this.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I actually wanted to convey this to my parents but they were sleeping so keeping this happy news for them next day&lt;/li&gt;
+  &lt;li&gt;Immediately whatsapped my sissys &lt;a href=&quot;https://www.facebook.com/annapoorani.srinivasan.79&quot;&gt;Jayasree&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/karpagam.srinivasan.37&quot;&gt;Aparna&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Next messaged my friends who helped me to go through the phase of failure from last admit rejection and encouraged me to apply again
+&lt;a href=&quot;https://www.facebook.com/madhava6688&quot;&gt;Madhava Jayamani&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/sukanya.kalaichelvan&quot;&gt;Sukanya&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Whatsapped my well wisher and my mentor in Office &lt;a href=&quot;https://www.facebook.com/desikan.rajesh&quot;&gt;Rajesh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then I slept very happily. Next morning conveyed the happy news to parents they were also very happy. After that I left to office.
+When reaching office only I realized that the message to Madhava was not delivered. Actually October 8 is his birthday. I called to wish him but din wish him first instead started with this news and was very thankful for him for his help for the application also wished him for becoming old more…&lt;/p&gt;
+
+&lt;p&gt;As people started coming to office first approached their desk and just showed the decision letter to them. Indeed was very happy that day.This is what I did &lt;br /&gt;
+* &lt;a href=&quot;https://www.facebook.com/benita.gabriella&quot;&gt;Benita&lt;/a&gt;- English mummy who corrected my grammer and &lt;a href=&quot;https://www.facebook.com/sukanya.kalaichelvan&quot;&gt;Sukanya&lt;/a&gt;&lt;br /&gt;
+* &lt;a href=&quot;https://www.facebook.com/santio.ruban&quot;&gt;Santio&lt;/a&gt;- English sir who helped in making my huge huge huge huge essay to the required size&lt;br /&gt;
+* &lt;a href=&quot;https://www.facebook.com/alok.rout&quot;&gt;Alok&lt;/a&gt;- Guy who is gud at english also always point at my english mistakes.Helped me in refining my application.&lt;br /&gt;
+* Satish- My manager who is my boss also was one who wrote a letter of recommendation for my application amidst his tight schedule.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;i-would-like-to-thank-you-all-of-the-people-who-have-helped-getting-this-admit-please-forgive-in-case-if-i-have-missed-anyone-name-in-the-list&quot;&gt;I would like to Thank You all of the people who have helped getting this admit. Please forgive in case if I have missed anyone name in the list&lt;/h4&gt;
+&lt;center&gt;THANKS ALL!!!&lt;/center&gt;
+
+</description>
+        <pubDate>Fri, 26 Dec 2014 00:00:00 +0530</pubDate>
+        <link>http://blog.balaaagi.me/omscs/hurrayresultscame</link>
+        <guid isPermaLink="true">http://blog.balaaagi.me/omscs/hurrayresultscame</guid>
+      </item>
+    
+      <item>
         <title>Target GA Tech</title>
         <description>&lt;p&gt;After starting learning a lot from online MOOC courses planned to pursue to do a graduate degree course via online. Was searching for the same for a while whole throughout the year and that which impressed and which made me more eager towards becoming a student in OMSCS-Online Master’s in Computer Science from &lt;a href=&quot;http://www.omscs.gatech.edu/&quot;&gt;Georgia Tech&lt;/a&gt;. &lt;/p&gt;
 
@@ -16,31 +101,12 @@
 
 &lt;p&gt;With these mind and also the first application being rejected was eagerly waiting for the dates to be announced. Actually this time I was preparing my essays well. I gave it to various set of persons such that it does not have any silly grammatical mistakes. Also it is upto the standard of an essay that for sure will get an admit. Also kept my recommenders well in advance such that they don’t miss the deadlines and make their recommendations on time.&lt;/p&gt;
 
-&lt;p&gt;When the dates where announced I started filling the application from day 1. I also made a checklist in &lt;a href=&quot;www.hackpad.com&quot;&gt;Hackpad&lt;/a&gt; for the list of items to be done like essay review, marksheets scanning, TOEFL score etc..This time was very much determined to get into the esteemed university. I completed my application for SPRING 2015 by September 17, 2014. Which was very early even though I have so much days for the deadline. I submitted so early because last time those who registered at last moment where rejected due to the seats where filled. I know University won’t admit make admissions based on First in basis. There might be major other factors which would have caused their rejecttions like me for poor essays which is their only source of information about me.&lt;/p&gt;
+&lt;p&gt;When the dates where announced I started filling the application from day 1. I also made a checklist in &lt;a href=&quot;https://hackpad.com&quot;&gt;Hackpad&lt;/a&gt; for the list of items to be done like essay review, marksheets scanning, TOEFL score etc..This time was very much determined to get into the esteemed university. I completed my application for SPRING 2015 by September 17, 2014. Which was very early even though I have so much days for the deadline. I submitted so early because last time those who registered at last moment where rejected due to the seats where filled. I know University won’t admit make admissions based on First in basis. There might be major other factors which would have caused their rejecttions like me for poor essays which is their only source of information about me.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 25 Dec 2014 00:00:00 +0530</pubDate>
         <link>http://blog.balaaagi.me/omscs/targetGATech</link>
         <guid isPermaLink="true">http://blog.balaaagi.me/omscs/targetGATech</guid>
-      </item>
-    
-      <item>
-        <title>Target GA Tech</title>
-        <description>&lt;p&gt;From the day I was born I think I was studious(lol).I don like it even if I think how I was when I was young like tat I simply laugh seeing me now.But it was those hard workz  tat has brought me to these many distances of my life.&lt;/p&gt;
-
-&lt;p&gt;With lots of aim and aspirations and with the willingness to achieve a lot finished my Schooling (&lt;strong&gt;Chinmaya Vidaylaya&lt;/strong&gt; &amp;amp; &lt;strong&gt;Santhome Higher Secondary&lt;/strong&gt;,Chennai) entered my college into one of the premiere institutions in the state of Tamil Nadu.&lt;/p&gt;
-
-&lt;p&gt;Doin my specialization in Information Technology willingness to do a lot coding aimed for gr8 company placements got lot exposure and experience from my seniors.&lt;/p&gt;
-
-&lt;p&gt;To be frank it was this part of my life tat I learn a lot. Life lessons were being learn a lot endless to say each second in my college somebody or something was teaching some for my life . I took everything in tat way I proceeded.&lt;/p&gt;
-
-&lt;p&gt;New interests of film and video making learn a lot of tricks an technologies and with brand name of &lt;a href=&quot;http://www.youtube.com/user/buzzyBalagi&quot;&gt;&lt;strong&gt;Black &amp;amp; White Studios&lt;/strong&gt;&lt;/a&gt; did my presentations.At the end of four years the only thing I still have few friends who taught me many and a name for my presentations and videos tat 
-&amp;gt;Nobody knows wat his videos depict even himself:p&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 25 Dec 2014 00:00:00 +0530</pubDate>
-        <link>http://blog.balaaagi.me/omscs/journeytillnow</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/omscs/journeytillnow</guid>
       </item>
     
       <item>
@@ -171,8 +237,8 @@ This time we came via Koliyanur route which was pretty simple and clear. Through
 &lt;p&gt;Another weekend spent seeking the blessing of lords:)&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Jul 2014 19:17:04 +0530</pubDate>
-        <link>http://blog.balaaagi.me/trip-to-kumbakonam-july-2014</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/trip-to-kumbakonam-july-2014</guid>
+        <link>http://blog.balaaagi.me/blog/trip-to-kumbakonam-july-2014</link>
+        <guid isPermaLink="true">http://blog.balaaagi.me/blog/trip-to-kumbakonam-july-2014</guid>
       </item>
     
       <item>
@@ -213,116 +279,8 @@ This time we came via Koliyanur route which was pretty simple and clear. Through
 &lt;p&gt;Another weekend spent seeking the blessing of lords:)&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Jul 2014 19:17:04 +0530</pubDate>
-        <link>http://blog.balaaagi.me/blog/trip-to-kumbakonam-july-2014</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/blog/trip-to-kumbakonam-july-2014</guid>
-      </item>
-    
-      <item>
-        <title>March 2014 Devlogs</title>
-        <description>&lt;p&gt;The month started with plan to learn &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. With little knowledgable in javascript was very much reluctant or does not have much confident in starting or diving into node.&lt;/p&gt;
-
-&lt;p&gt;So initially thought of downloading some ebooks and just follow what they have said.
-But later thought let us do it with a simple project.&lt;/p&gt;
-
-&lt;p&gt;So my long idea of saving the links I visited to a place for future reference is the project I choosed. But where to start?&lt;/p&gt;
-
-&lt;p&gt;Help came in hand with this &lt;a href=&quot;http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The tutorial has a simple app to store user id and email id in mongo db and retrieve and show to users.&lt;/p&gt;
-
-&lt;p&gt;So instead of using that I made my idea live.&lt;/p&gt;
-
-&lt;p&gt;Step 1 was installation which I had done a year back with eagerness to learn node. So basic node with npm is already installed.&lt;/p&gt;
-
-&lt;p&gt;Step 2 was to install &lt;a href=&quot;http://expressjs.com/&quot;&gt;express&lt;/a&gt;. I learnt that it is web application framework for single and multi page web applications.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;npm install -g express&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Step 3 Create Basic Express application by simple command.
-&lt;code&gt;express --sessions mylinks&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Step 4 Adding the dependencies.
-       Whatever I am gonna use it in my application all the related dependencies must be configured here(I have written it under my way of understanding)
-Done in the file that is being created as part of express routine.
-&lt;code&gt;package.json&lt;/code&gt;
-This was my initial config in package.json&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;name&quot;: &quot;MyLinks&quot;,
-  &quot;version&quot;: &quot;0.0.1&quot;,
-  &quot;private&quot;: true,
-  &quot;scripts&quot;: {
-    &quot;start&quot;: &quot;node app.js&quot;
-  },
-  &quot;dependencies&quot;: {
-    &quot;express&quot;: &quot;3.4.8&quot;,
-    &quot;jade&quot;: &quot;*&quot;,
-    &quot;mongodb&quot;:&quot;*&quot;,
-    &quot;monk&quot;:&quot;*&quot;
-  }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here &lt;a href=&quot;https://github.com/LearnBoost/monk&quot;&gt;monk&lt;/a&gt; is used for accessing MongoDB from Node.js.&lt;/p&gt;
-
-&lt;p&gt;With initial learning about Mongo DB queries using &lt;a href=&quot;https://education.mongodb.com&quot;&gt;MongoDB University&lt;/a&gt; was easily able to insert and retrieve data from MongoDB collections.&lt;/p&gt;
-
-&lt;p&gt;Had the difficulty in understanding the how Node.js application works.&lt;/p&gt;
-
-&lt;p&gt;Then got a grap of it. Let me put in my works of understanding.&lt;/p&gt;
-
-&lt;p&gt;All the neccesary dependencise will be included using &lt;code&gt;require&lt;/code&gt;.
-An object of &lt;code&gt;express&lt;/code&gt; is mainly used for routing.
-Based on the url with which the object being used the corresponding routes are used and provide the response.
-To access the database db objects which are created using monk are passed to the routes function. 
-From the routes function corresponding jade which is the layouts being rendered to the users.&lt;/p&gt;
-
-&lt;p&gt;With intial Setup and code written I was able to select the data from the db and display. But had issues while displaying with JADE. The indentations made it worse.&lt;/p&gt;
-
-&lt;p&gt;Then the next feature of adding links to the db.
-Created a simple form using JADE and on submit called a url which inturn has the neccesary the logic to store in db by getting values from the request.&lt;/p&gt;
-
-&lt;p&gt;Then added the feature for having tags to the links.
-We can store array of mutiple values to a column(field) in MongoDB since it is similar to JSON.&lt;/p&gt;
-
-&lt;p&gt;So stored the tags in the way. Retrieving and displaying again got some trouble with JADE. Used for loop to fetch all the links and for each link had a for loop for all the tags within it. Again indentation problem arised but fixed with option in Sublime to convert spaces to indentations.&lt;/p&gt;
-
-&lt;p&gt;Now adding the tags had a problem. How the user will add the tags. We cannot be sure of how many tags can a link be associated with. Hence planned to get user input with comma separated. And fetched the field value and split it using commas and store in array and passed to addlink route.
-&lt;code&gt;tags=req.body.tags.split(&quot;,&quot;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Later want to try another driver used for accessing MongoDB from Node.js. It was &lt;a href=&quot;https://www.npmjs.org/package/mongoskin&quot;&gt;mongoskin&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Modified the package.json&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-{
-  &quot;name&quot;: &quot;MyLinks&quot;,
-  &quot;version&quot;: &quot;0.0.1&quot;,
-  &quot;private&quot;: true,
-  &quot;scripts&quot;: {
-    &quot;start&quot;: &quot;node app.js&quot;
-  },
-  &quot;dependencies&quot;: {
-    &quot;express&quot;: &quot;3.4.8&quot;,
-    &quot;jade&quot;: &quot;*&quot;,
-    &quot;mongodb&quot;:&quot;*&quot;,
-    &quot;mongoskin&quot;:&quot;*&quot;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The db object creation part differs from that of monk.&lt;/p&gt;
-
-&lt;p&gt;Also the way in which collections are accessed are also differnt. Hence modified the changes.
-Added links between the pages.
-My first web application with Node.js,MongoDB,Express and Jade is done.
-Find the code in below path
-&lt;a href=&quot;https://github.com/balaaagi/MyLinks&quot;&gt;https://github.com/balaaagi/MyLinks&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Few more features to be added in coming weeks.&lt;/p&gt;
-
-&lt;p&gt;It was too slow to complete this learning itself. Hope I pick the pace soon…&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 30 Mar 2014 23:57:55 +0530</pubDate>
-        <link>http://blog.balaaagi.me/march-2014-devlogs</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/march-2014-devlogs</guid>
+        <link>http://blog.balaaagi.me/trip-to-kumbakonam-july-2014</link>
+        <guid isPermaLink="true">http://blog.balaaagi.me/trip-to-kumbakonam-july-2014</guid>
       </item>
     
       <item>
@@ -434,38 +392,111 @@ Find the code in below path
       </item>
     
       <item>
-        <title>My look Ahead for 2014</title>
-        <description>&lt;h4 id=&quot;updated-on-august-3-2014&quot;&gt;UPDATED ON AUGUST 3, 2014&lt;/h4&gt;
-&lt;hr /&gt;
+        <title>March 2014 Devlogs</title>
+        <description>&lt;p&gt;The month started with plan to learn &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. With little knowledgable in javascript was very much reluctant or does not have much confident in starting or diving into node.&lt;/p&gt;
 
-&lt;p&gt;Yes as the title says the post is about my plan(rough one) for 2014. Usually at the start of the year I plan and think to do lot of things but this year I am going to be very serious is making it up. Below are the list of things that I have planned to do in this year without failing. I will be striking out the things once I have completed it. This post will be regularly updated.&lt;/p&gt;
+&lt;p&gt;So initially thought of downloading some ebooks and just follow what they have said.
+But later thought let us do it with a simple project.&lt;/p&gt;
 
-&lt;p&gt;*Spend More time with family&lt;br /&gt;
-*Do only things that make me feel happy in job&lt;br /&gt;
-*Read &lt;a href=&quot;https://www.goodreads.com/user_challenges/1128111&quot;&gt;30 Books&lt;/a&gt; for the year.&lt;br /&gt;
-*~~Go the Bachelor’s dream place in India -&lt;a href=&quot;https://www.google.co.in/search?q=goa&amp;amp;espv=210&amp;amp;es_sm=119&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ei=jqkAU5zVE8amrAfFoIGwBw&amp;amp;ved=0CAoQ_AUoAg&amp;amp;biw=1278&amp;amp;bih=629#q=goa&amp;amp;tbm=isch&amp;amp;imgdii=_&quot;&gt;Goa&lt;/a&gt;~~&lt;br /&gt;
-*Eat Breakfast, lunch &amp;amp; dinner on time without fail&lt;br /&gt;
-*Go for Mid Sea Diving @ &lt;a href=&quot;https://www.google.co.in/search?q=mid+sea+diving+kovalam&amp;amp;espv=210&amp;amp;es_sm=119&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ei=hKoAU4mlIMWHrQeRtoDQCg&amp;amp;ved=0CAoQ_AUoAg&amp;amp;biw=1278&amp;amp;bih=629&quot;&gt;Kovalam&lt;/a&gt;&lt;br /&gt;
-*Go for minimum 3 Treks this year&lt;br /&gt;
-*Learn to Swim&lt;br /&gt;
-*Learn to drive 4 Wheeler&lt;br /&gt;
-*Partipate in local Marathon and try completing 10K mark&lt;br /&gt;
-*Try completing atleast one online course per two months in any of MOOCS platform(&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;/&lt;a href=&quot;https://www.coursera.org&quot;&gt;Courseera&lt;/a&gt;/&lt;a href=&quot;https://www.edx.org/&quot;&gt;edX&lt;/a&gt;/&lt;a href=&quot;http://academicearth.org/&quot;&gt;Academic Earth&lt;/a&gt;)&lt;br /&gt;
-*Contribute to a Open Source Project effectively&lt;br /&gt;
-*Participate in lot of Hackathons and build more&lt;br /&gt;
-*Try to give a tech talk in some meetup&lt;br /&gt;
-*Become a &lt;a href=&quot;http://www.omscs.gatech.edu/&quot;&gt;GT OMSCS&lt;/a&gt; Student&lt;br /&gt;
-*Apply to Hacker School and try getting admitted
-&lt;br /&gt;
-The above are the list which  I have prepared when I start the year. Anything or any additional things I want to include in the list I will add after the below line. Keeping my finger crossed to achieve 100% in the above list.&lt;/p&gt;
+&lt;p&gt;So my long idea of saving the links I visited to a place for future reference is the project I choosed. But where to start?&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Help came in hand with this &lt;a href=&quot;http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The tutorial has a simple app to store user id and email id in mongo db and retrieve and show to users.&lt;/p&gt;
+
+&lt;p&gt;So instead of using that I made my idea live.&lt;/p&gt;
+
+&lt;p&gt;Step 1 was installation which I had done a year back with eagerness to learn node. So basic node with npm is already installed.&lt;/p&gt;
+
+&lt;p&gt;Step 2 was to install &lt;a href=&quot;http://expressjs.com/&quot;&gt;express&lt;/a&gt;. I learnt that it is web application framework for single and multi page web applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;npm install -g express&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 3 Create Basic Express application by simple command.
+&lt;code&gt;express --sessions mylinks&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 4 Adding the dependencies.
+       Whatever I am gonna use it in my application all the related dependencies must be configured here(I have written it under my way of understanding)
+Done in the file that is being created as part of express routine.
+&lt;code&gt;package.json&lt;/code&gt;
+This was my initial config in package.json&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;name&quot;: &quot;MyLinks&quot;,
+  &quot;version&quot;: &quot;0.0.1&quot;,
+  &quot;private&quot;: true,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;node app.js&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;express&quot;: &quot;3.4.8&quot;,
+    &quot;jade&quot;: &quot;*&quot;,
+    &quot;mongodb&quot;:&quot;*&quot;,
+    &quot;monk&quot;:&quot;*&quot;
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here &lt;a href=&quot;https://github.com/LearnBoost/monk&quot;&gt;monk&lt;/a&gt; is used for accessing MongoDB from Node.js.&lt;/p&gt;
+
+&lt;p&gt;With initial learning about Mongo DB queries using &lt;a href=&quot;https://education.mongodb.com&quot;&gt;MongoDB University&lt;/a&gt; was easily able to insert and retrieve data from MongoDB collections.&lt;/p&gt;
+
+&lt;p&gt;Had the difficulty in understanding the how Node.js application works.&lt;/p&gt;
+
+&lt;p&gt;Then got a grap of it. Let me put in my works of understanding.&lt;/p&gt;
+
+&lt;p&gt;All the neccesary dependencise will be included using &lt;code&gt;require&lt;/code&gt;.
+An object of &lt;code&gt;express&lt;/code&gt; is mainly used for routing.
+Based on the url with which the object being used the corresponding routes are used and provide the response.
+To access the database db objects which are created using monk are passed to the routes function. 
+From the routes function corresponding jade which is the layouts being rendered to the users.&lt;/p&gt;
+
+&lt;p&gt;With intial Setup and code written I was able to select the data from the db and display. But had issues while displaying with JADE. The indentations made it worse.&lt;/p&gt;
+
+&lt;p&gt;Then the next feature of adding links to the db.
+Created a simple form using JADE and on submit called a url which inturn has the neccesary the logic to store in db by getting values from the request.&lt;/p&gt;
+
+&lt;p&gt;Then added the feature for having tags to the links.
+We can store array of mutiple values to a column(field) in MongoDB since it is similar to JSON.&lt;/p&gt;
+
+&lt;p&gt;So stored the tags in the way. Retrieving and displaying again got some trouble with JADE. Used for loop to fetch all the links and for each link had a for loop for all the tags within it. Again indentation problem arised but fixed with option in Sublime to convert spaces to indentations.&lt;/p&gt;
+
+&lt;p&gt;Now adding the tags had a problem. How the user will add the tags. We cannot be sure of how many tags can a link be associated with. Hence planned to get user input with comma separated. And fetched the field value and split it using commas and store in array and passed to addlink route.
+&lt;code&gt;tags=req.body.tags.split(&quot;,&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Later want to try another driver used for accessing MongoDB from Node.js. It was &lt;a href=&quot;https://www.npmjs.org/package/mongoskin&quot;&gt;mongoskin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Modified the package.json&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+{
+  &quot;name&quot;: &quot;MyLinks&quot;,
+  &quot;version&quot;: &quot;0.0.1&quot;,
+  &quot;private&quot;: true,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;node app.js&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;express&quot;: &quot;3.4.8&quot;,
+    &quot;jade&quot;: &quot;*&quot;,
+    &quot;mongodb&quot;:&quot;*&quot;,
+    &quot;mongoskin&quot;:&quot;*&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The db object creation part differs from that of monk.&lt;/p&gt;
+
+&lt;p&gt;Also the way in which collections are accessed are also differnt. Hence modified the changes.
+Added links between the pages.
+My first web application with Node.js,MongoDB,Express and Jade is done.
+Find the code in below path
+&lt;a href=&quot;https://github.com/balaaagi/MyLinks&quot;&gt;https://github.com/balaaagi/MyLinks&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Few more features to be added in coming weeks.&lt;/p&gt;
+
+&lt;p&gt;It was too slow to complete this learning itself. Hope I pick the pace soon…&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Jan 2014 17:19:55 +0530</pubDate>
-        <link>http://blog.balaaagi.me/blog/my-look-ahead-for-2014</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/blog/my-look-ahead-for-2014</guid>
+        <pubDate>Sun, 30 Mar 2014 23:57:55 +0530</pubDate>
+        <link>http://blog.balaaagi.me/march-2014-devlogs</link>
+        <guid isPermaLink="true">http://blog.balaaagi.me/march-2014-devlogs</guid>
       </item>
     
       <item>
