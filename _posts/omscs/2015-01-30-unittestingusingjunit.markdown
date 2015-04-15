@@ -1,24 +1,25 @@
 ---
 layout: omscspost
-title: Simple Calculator in Android 
+title: Unit Testing Using JUnit  
 date: 2015-01-30
 categories: omscs
 term : Spring '15 
 course: CS6300
 ---
 
-The first project that came all along it's way in Android a area of mobile space where I want to get deep expertise.
-The project is to make a mathematical calculator in Android.
-The main objective of this project was to get familiar with the environment and Android platform.
-As I have done few projects already in mobile application development it was little easy for me to get accustomed with the environment. I mainly wanted to design the application in a more Object Oriented way. Hence made sure that I developed in the following way
+The course seems to be more interesting since I am getting more coding assignments.
+This one was to just to read a sentence and reverse the sentence in way such that each of the words gets different position in the new sentence. Like the last word takes the first position and penultimate word takes the second position like that.
 
-*	Followed TDD for core functionalities
-* 	Implement main core functionalites as separate classes
-*	Just use the objects of those classes in Android activities.
+The algorithm seems to be very simple but implementation made us to learn the importance of unit testing.
+With my daily coding go around PL/SQL also I am trying TDD with PL/SQL in my own style working unit testing framework is always seems to be very great. 
 
-I was able to complete the project on time and learned quite a few stuffs as below
+We need to use [JUnit](http://junit.org/) for unit testing.
+I tried implementing the assignment via TDD and ensured that I am getting used to JUnit.
 
-*	Separate core functionalities from the Activities
-*	[Alert Dialogs](http://developer.android.com/reference/android/app/AlertDialog.html) how to display alert dialogs
+Doing this way made me to learn a lot
 
+*  How to handle exceptions in JUnit
+*  How to make the code more modular
+*  How to segragate the functionalities
+*  How to make a test case pass from fail using JUnit
 
