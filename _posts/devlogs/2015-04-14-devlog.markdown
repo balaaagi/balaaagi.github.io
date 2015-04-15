@@ -2,7 +2,7 @@
 layout: omscspost
 title: Devlog  
 date: 2015-04-14
-categories: devlog
+categories: devlogs
 ---
 
 It is [Tamil New Year](http://en.wikipedia.org/wiki/Puthandu). So today office is off which is actually a optional holiday.
