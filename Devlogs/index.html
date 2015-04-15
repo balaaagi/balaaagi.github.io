@@ -16,7 +16,7 @@ title: Balaji Srinivasan
       {% endif %}
     {% endunless %}
     <a href='{{ post.url }}'>
-      <span class='title'>{{ post.title }}{{post.tags}}</span>
+      <span class='title'>{{ post.title | date_to_string}}</span>
       <span class='published-on'>{{ post.date | date_to_string }}</span>
     </a>
   {% endfor %}
