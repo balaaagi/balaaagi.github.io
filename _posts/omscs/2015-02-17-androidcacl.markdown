@@ -1,7 +1,7 @@
 ---
 layout: omscspost
 title: Simple Calculator in Android 
-date: 2015-01-30
+date: 2015-02-22
 categories: omscs
 term : Spring '15 
 course: CS6300
