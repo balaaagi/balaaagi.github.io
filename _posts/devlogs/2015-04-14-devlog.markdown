@@ -1,6 +1,6 @@
 ---
-layout: omscspost
-title: Devlog  
+layout: devlog
+title: Devlog 
 date: 2015-04-14
 categories: devlogs
 ---
