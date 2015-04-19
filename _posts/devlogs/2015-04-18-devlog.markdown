@@ -5,7 +5,7 @@ date: 2015-04-18
 categories: devlogs
 ---
 
-I
+
 
 * Fixed the issuess in  [cricinfo curler](https://github.com/balaaagi/CricInfoCurler) for accesing via behind Proxy.Introduced Printwriter for writing the config file. Still yet to complete the Junit Test cases. After writing that only there will be lot of refactoring.
 * Was learning [Apache Poi Java Library](https://poi.apache.org/apidocs/). Was exploring this since had to use it in one of the projects.
