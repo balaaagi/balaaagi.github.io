@@ -8,7 +8,7 @@ course: CS7637
 ---
 
 The lectures are organised around the seven topics of AI
- ![SeventopicsofAI](7topicsofAI.png)
+![image](https://cloud.githubusercontent.com/assets/2221784/7844374/955c037a-04cd-11e5-8376-f95d5ff9661c.png)
 
 The initial set of lectures were based on covering the fundamentals. The first topic in fundamentals is Semantic Networks - a way of knowledge representation,  which I explained in my previous blog post.
 
