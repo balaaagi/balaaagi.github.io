@@ -57,3 +57,10 @@ Contents resides in working memory
 Other steps remain in long term memory
 Pitcher applies procedural steps and decide on the next steps based on the goal in content
 If the content changes it take according steps. If in case the system does not able to decide between two results from procedural it move to Episodic where it has particular set of memory result decision based on that.
+
+
+###Chunking
+Chunking is to find a rule that will break the imparse. Then SOAR searches episodic memory and find a rule. Reasoning, learning and memory are closely connected in cognitive systems.
+
+###Cognitive Connection
+SOAR architecure resembles how human solve problem for algebra and analytics. SOAR working memory is like human short term memory. Inspite of this we can't conclude that we have a solid architecture on human cognition
