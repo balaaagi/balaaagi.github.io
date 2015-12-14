@@ -7,8 +7,9 @@ categories: devlogs
 
 
 
-* Worked on the logging and exceptions part of the reporting that I was developing in office
-* Learnt List View Creation, Adapter and ArrayAdapter by making progress on the SunShine App. 
-* Learnt Shortcuts of Android Studio in Mac
+* Worked on the logging and exceptions part of the reporting framework that I was developing in office
 * Read Log- Did not make any progress in this. Need to complete [Sachin Tendulkar -Playing it My Way](http://www.amazon.in/Sachin-Tendulkar-Playing-Way-Autobiography/dp/1473605202) atleast by this month
 
+## Android LearnLog
+* Learnt List View Creation, Adapter and ArrayAdapter by making progress on the SunShine App. 
+* Learnt Shortcuts of Android Studio in Mac
