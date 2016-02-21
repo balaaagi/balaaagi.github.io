@@ -1,7 +1,7 @@
 ---
 layout: devlog
 title: Devlog
-date: 2010-02-21 16:53:06.000000000 +05:30
+date: 2016-02-21 16:53:06.000000000 +05:30
 categories: devlogs
 ---
 
