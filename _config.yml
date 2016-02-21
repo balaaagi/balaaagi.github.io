@@ -1,6 +1,6 @@
 name: Balaji Srinivasan
 description: ''
 url: http://blog.balaaagi.me
-highlighter: pygments
+highlighter: rouge
 permalink: /:categories/:title
 markdown: kramdown
