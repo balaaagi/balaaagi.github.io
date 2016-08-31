@@ -45,18 +45,18 @@ One of the example of CP. A research paper by Stanford.Main context is if we swa
 
 Wide angled image produced by combining various images in sequences taken together.
 
-  ### Steps Involved in creating Panaromas
-    * Take Pictures
-    * Detecting and Matching
-    * Warping
-    * Fade, Blend/Cut
-    * Cropping(Optional)
+### Steps Involved in creating Panaromas
+* Take Pictures
+* Detecting and Matching
+* Warping
+* Fade, Blend/Cut
+* Cropping(Optional)
 
-  ### Types of Panaromas
-    * Planar/Rectilinear
-    * Vertical
-    * Cylindrical/Rotational
-    * Path/Route
+### Types of Panaromas
+* Planar/Rectilinear
+* Vertical
+* Cylindrical/Rotational
+* Path/Route
 
 ## Why Computational Photography?
 
