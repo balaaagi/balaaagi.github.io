@@ -1,0 +1,8 @@
+---
+layout: omscspost
+title: Computer Photography- Week 1 LearnLog
+date: 2016-08-29
+categories: omscs
+term : Fall '16
+course: CS6475
+---
