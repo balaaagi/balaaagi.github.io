@@ -2,6 +2,7 @@
 layout: post
 title: My look Ahead for  Q1 2017
 date: 2017-01-02 00:01:58.000000000 +05:30
+categories: blog
 ---
 
 *****
