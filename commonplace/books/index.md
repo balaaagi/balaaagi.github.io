@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books
-date:  2014-11-14 
+date:  2016-01-07
 ---
 
 This a collections of books I have read until now 
@@ -23,6 +23,10 @@ This a collections of books I have read until now
 
 <h2>Non Fiction</h2>
 - [The Monk Who Sold his Ferrari](https://www.goodreads.com/book/show/23002737-the-monk-who-sold-his-ferrari), by Robin Sharma
+- [Transform Your Habits](https://www.goodreads.com/book/show/20809233-transform-your-habits), by James Clear
+- [Analyzing the Analyzers](https://www.goodreads.com/book/show/18873876-analyzing-the-analyzers), by Harlan Harris, Sean Murphy, Marck Vaisman
 
 <h2>Bio</h2>
 - [Steve Jobs](https://www.goodreads.com/book/show/11084145-steve-jobs), by Walter Issacson
+
+- [Playing It My Way: My Autobiography](https://www.goodreads.com/book/show/23152041-playing-it-my-way), by Sachin Tendulkar, Boria Majumdar
