@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books
-date:  2016-01-07
+date:  2016-01-11
 ---
 
 This a collections of books I have read until now 
@@ -20,6 +20,7 @@ This a collections of books I have read until now
 - [Connect the Dots](https://www.goodreads.com/book/show/8142431-connect-the-dots), by Rashmi Bansal
 - [Five Point Someone](https://www.goodreads.com/book/show/105576.Five_Point_Someone), by Chetan Bhagat
 - [Two States](https://www.goodreads.com/book/show/6969361-2-states), by Chetan Bhagat
+- [To Kill a Mockingbird](https://www.goodreads.com/book/show/8045416-to-kill-a-mockingbird), by Harper Lee
 
 <h2>Non Fiction</h2>
 - [The Monk Who Sold his Ferrari](https://www.goodreads.com/book/show/23002737-the-monk-who-sold-his-ferrari), by Robin Sharma
