@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books
-date:  2017-02-13
+date:  2017-03-31
 ---
 
 This a collections of books I have read until now 
@@ -28,6 +28,7 @@ This a collections of books I have read until now
 - [Transform Your Habits](https://www.goodreads.com/book/show/20809233-transform-your-habits), by James Clear
 - [Analyzing the Analyzers](https://www.goodreads.com/book/show/18873876-analyzing-the-analyzers), by Harlan Harris, Sean Murphy, Marck Vaisman
 - [Outliers: The Story of Success](https://www.goodreads.com/book/show/3228917-outliers), by Malcolm Gladwell
+- [The End of Karma: Hope and Fury Among India's Young](https://www.goodreads.com/book/show/30823292-the-end-of-karma), by Somini Sengupta
 
 <h2>Bio</h2>
 - [Steve Jobs](https://www.goodreads.com/book/show/11084145-steve-jobs), by Walter Issacson
