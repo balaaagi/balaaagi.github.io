@@ -6,6 +6,7 @@ categories: blog
 ---
 
 *****
+## Updated At End of Q1 See recent blog on my plan for next quarter
 
 Planning for the year has been to over confidence. Hence I have started planning for short durations. Exactly for three months tenure which we call in corporates as Quarters. Below is the look ahead for my Q1 2017. It contains various categories under which I plan to achieve
 
@@ -18,10 +19,11 @@ Planning for the year has been to over confidence. Hence I have started planning
 * Learn car driving and ensure to get license
 
 ### Self Improvement
-* Make reading a regular habbit.Ensure to read atleast 5 books under various categories before end of March, 2017
+* ~~Make reading a regular habbit.Ensure to read atleast 5 books under various categories before end of March, 2017~~
 * Make writing a regular habit. Ensure to write devlogs and learning logs atleast regularly.
 * Publish as many Android apps in Play Store to get a decent profile in the play store and become an expert in Android.
 * Complete Andrew N G Machine Learning course before the deadline with certificate
+
 
 
 
