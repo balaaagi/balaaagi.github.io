@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books
-date:  2017-03-31
+date:  2017-04-06
 ---
 
 This a collections of books I have read until now 
@@ -29,6 +29,7 @@ This a collections of books I have read until now
 - [Analyzing the Analyzers](https://www.goodreads.com/book/show/18873876-analyzing-the-analyzers), by Harlan Harris, Sean Murphy, Marck Vaisman
 - [Outliers: The Story of Success](https://www.goodreads.com/book/show/3228917-outliers), by Malcolm Gladwell
 - [The End of Karma: Hope and Fury Among India's Young](https://www.goodreads.com/book/show/30823292-the-end-of-karma), by Somini Sengupta
+- [Zero to One: Notes on Startups, or How to Build the Future](https://www.goodreads.com/book/show/18050143-zero-to-one), by Peter Thiel,Blake Masters
 
 <h2>Bio</h2>
 - [Steve Jobs](https://www.goodreads.com/book/show/11084145-steve-jobs), by Walter Issacson
