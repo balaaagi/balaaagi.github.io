@@ -1,0 +1,100 @@
+---
+layout: devlog
+title: Devlog 
+date: 2017-11-24 13:51:41.000000000 +05:30
+categories: devlogs
+---
+
+Writing Devlogs after so many months. Learning a new programming language is always fun. This time have started learning [Ruby](https://www.ruby-lang.org/en/) for a new project. With Focussed on craftsmanship principles have started learning with [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
+
+Have started writing tests using [Rspec](http://rspec.info/) a BDD for ruby.
+
+Below are the few techniques that help us in creating reports for the tests we have written
+
+Sample Project Structure
+
+```bash
+
+├── lib
+│   └── shoppingcart.rb
+
+└── spec
+    ├── shopping_cart_spec.rb
+    └── spec_helper.rb
+
+```
+
+## Code Coverage 
+
+In order for Code coverage we need to know how our tests are written against the line coverage. In order do that with Rspec I used [simplecov](https://github.com/colszowka/simplecov). Below are the configuration to make in `spec_helper.rb`
+
+```
+
+require 'simplecov'
+SimpleCov.minimum_coverage 70
+```
+Above configuration is for setting the minimum coverage required. Need to explore how to link this with build.
+
+``` 
+SimpleCov.start do
+  add_filter "/spec/"
+end
+
+```
+This line is to ignore the specs folder.
+
+With this if you run the tests using command `rspec` folder structure will become as follows. index.html gives a good coverage report with basic layout
+
+```bash
+
+├── coverage
+│   ├── assets
+│   │   └── 0.10.2
+│   │       ├── application.css
+│   │       ├── application.js
+│   │       ├── colorbox
+│   │       │   ├── border.png
+│   │       │   ├── controls.png
+│   │       │   ├── loading_background.png
+│   │       │   └── loading.gif
+│   │       ├── favicon_green.png
+│   │       ├── favicon_red.png
+│   │       ├── favicon_yellow.png
+│   │       ├── loading.gif
+│   │       ├── magnify.png
+│   │       └── smoothness
+│   │           └── images
+│   │               ├── ui-bg_flat_0_aaaaaa_40x100.png
+│   │               ├── ui-bg_flat_75_ffffff_40x100.png
+│   │               ├── ui-bg_glass_55_fbf9ee_1x400.png
+│   │               ├── ui-bg_glass_65_ffffff_1x400.png
+│   │               ├── ui-bg_glass_75_dadada_1x400.png
+│   │               ├── ui-bg_glass_75_e6e6e6_1x400.png
+│   │               ├── ui-bg_glass_95_fef1ec_1x400.png
+│   │               ├── ui-bg_highlight-soft_75_cccccc_1x100.png
+│   │               ├── ui-icons_222222_256x240.png
+│   │               ├── ui-icons_2e83ff_256x240.png
+│   │               ├── ui-icons_454545_256x240.png
+│   │               ├── ui-icons_888888_256x240.png
+│   │               └── ui-icons_cd0a0a_256x240.png
+│   └── index.html
+├── lib
+│   └── shoppingcart.rb
+└── spec
+    ├── shopping_cart_spec.rb
+    └── spec_helper.rb
+
+```
+
+## Unit  Testing Results
+
+For unit test results and status of tests passed or failed we can use the default `rspec` configurations as below. In the root of our project there will be one file name `.rspec`
+
+It will have the default contents as `--require spec_helper` alone. We need to add the below lines to get the status of testing as html file.
+```
+--format html
+--out rspec_results.html
+```
+This will create a file name `rspec_results.html` in our root folder which shows the test status in html. 
+
+
