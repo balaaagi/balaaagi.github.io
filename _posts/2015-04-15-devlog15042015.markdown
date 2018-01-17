@@ -1,0 +1,13 @@
+---
+layout: post
+title: Devlog 
+date: 2015-04-15 00:32:41.000000000 +05:30
+categories: devlogs
+---
+
+Wow writing devlog for the second day
+
+* Made the [cricinfo curler](https://github.com/balaaagi/CricInfoCurler) to work as expected. Innings requirement feature seems to awesome
+* Need to write unit tests and README before sharing it publicly
+* Practised Funny Strings Problems from hackerrank again
+* Learnt about how Ford Java Framework uses cache technologies and how to implement them. Tommorow need to give it a try and use to fix one long pending issue.

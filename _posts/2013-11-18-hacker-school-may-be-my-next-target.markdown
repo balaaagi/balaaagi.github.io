@@ -2,6 +2,7 @@
 layout: post
 title: Hacker School may be my next target
 date: 2013-11-08 19:54:10.000000000 +05:30
+categories: blog devlogs
 ---
 With so much frustration in office work , not doing things which I like and wanna do always and not able to give my 100% in work and I was completely stressed out.
 

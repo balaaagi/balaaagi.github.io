@@ -1,0 +1,25 @@
+---
+layout: post
+title: Devlog
+date: 2016-02-21 16:53:06.000000000 +05:30
+categories: devlogs
+---
+
+
+
+* Worked on Freelancing Node REST services. Used ['bcrypt'](https://www.npmjs.com/package/bcrypt) module to effectively hash the password before storing in the Mongo.
+
+* Learnt and intergated an Signup Email Confirmation. Used ['nodemailer'](https://www.npmjs.com/package/nodemailer). Sent confirmation links and ensured that accounts are getting updated accordingly.
+
+* Used ['password generator'](https://github.com/bermi/password-generator) for generating some random passwords for social signups.
+
+
+* Learnt Linear Algebra tried to implement Gaussian Reduction algorithms
+
+
+
+#### TED Talks :
+
+* Listened to TED Talks ['The first 20 hours'](https://www.youtube.com/watch?v=5MgBikgcWnY) on how spend time on anything to learn it effectively.
+
+

@@ -2,6 +2,7 @@
 layout: post
 title: Hackathon in PANDA contd
 date: 2013-03-25 19:31:21.000000000 +05:30
+categories: blog work
 ---
 ...
 <br>

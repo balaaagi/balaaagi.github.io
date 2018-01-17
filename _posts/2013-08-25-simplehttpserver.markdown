@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Simple HTTPServer in MacOSX
+title: Simple HTTPServer in Local Machine
 date: 2013-08-25 18:38:16.000000000 +05:30
+categories: devlogs
 ---
 I was trying to setup a local [webserver](http://en.wikipedia.org/wiki/Web_server).
 I need it because, I was learning [D3](http://en.wikipedia.org/wiki/Protovis#Context) a javascript library after getting to know about it from Geeks Night session.

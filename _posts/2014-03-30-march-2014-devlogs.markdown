@@ -2,6 +2,7 @@
 layout: post
 title: March 2014 Devlogs
 date: 2014-03-30 23:57:55.000000000 +05:30
+categories: devlogs
 ---
 The month started with plan to learn [Node.js](http://nodejs.org/). With little knowledgable in javascript was very much reluctant or does not have much confident in starting or diving into node.
 

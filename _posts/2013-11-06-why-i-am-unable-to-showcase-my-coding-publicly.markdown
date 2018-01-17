@@ -2,6 +2,7 @@
 layout: post
 title: Why I am unable to Showcase my Coding publicly
 date: 2013-11-06 00:32:41.000000000 +05:30
+categories: blog devlogs
 ---
 While I was designing my long pending personal website I have added [GithHub](www.github.com) profile link. But what could I find in Github were just two repositories.
 *Initial GitHub Practicing repository

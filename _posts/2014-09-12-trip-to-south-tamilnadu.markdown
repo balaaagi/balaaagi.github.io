@@ -2,6 +2,7 @@
 layout: post
 title: South TamilNadu Trip 2014
 date: 2014-09-12 08:17:04.000000000 +05:30
+categories: blog travellogs
 ---
 
 This trip was planned such that we will be attending my collegue's [Annamalai](https://www.facebook.com/annamalai.ravi1)'s marriage.

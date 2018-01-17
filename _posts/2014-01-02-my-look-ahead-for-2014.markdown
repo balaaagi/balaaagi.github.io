@@ -2,8 +2,9 @@
 layout: post
 title: My look Ahead for 2014
 date: 2014-01-02 17:19:55.000000000 +05:30
+categories: blog
 ---
-####UPDATED ON AUGUST 3, 2014
+#### UPDATED ON AUGUST 3, 2014
 *****
 
 Yes as the title says the post is about my plan(rough one) for 2014. Usually at the start of the year I plan and think to do lot of things but this year I am going to be very serious is making it up. Below are the list of things that I have planned to do in this year without failing. I will be striking out the things once I have completed it. This post will be regularly updated.

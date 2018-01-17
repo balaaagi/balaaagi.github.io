@@ -2,6 +2,7 @@
 layout: post
 title: Hackathon in PANDA
 date: 2013-03-24 03:43:24.000000000 +05:30
+categories: blog work
 ---
 Being part of Chennai Geeks group and reading the blogs of my tech friends was eagerly waiting be part of the next Hackathon.
 

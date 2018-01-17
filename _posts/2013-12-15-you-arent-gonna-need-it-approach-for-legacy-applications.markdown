@@ -2,6 +2,7 @@
 layout: post
 title: You aren't gonna need it approach for legacy applications
 date: 2013-12-15 00:01:58.000000000 +05:30
+categories: blog
 ---
 Recently I learnt about one more agile terminology. Eventhough my project is following [Classic SDLC](http://en.wikipedia.org/wiki/Waterfall_model) I am expediting agile methodolgies like [TDD](http://en.wikipedia.org/wiki/Test-driven_development) , [Kanban](http://en.wikipedia.org/wiki/Kanban_%28development%29) and few more still expediting. <br>
 **Why am I doing this?**<br>

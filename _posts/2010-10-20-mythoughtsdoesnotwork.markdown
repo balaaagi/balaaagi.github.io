@@ -2,6 +2,7 @@
 layout: post
 title: My thoughts does not work
 date: 2010-10-20 13:31:57.000000000 +05:30
+categories: blog
 ---
 As my post topic my thought does not work. Yeah this word was new to me when I entered my college.Haven’t heard in my english classes it was SSN that thought me this yes it is [ThoughtWorks](http://www.thoughtworks.com/).
 

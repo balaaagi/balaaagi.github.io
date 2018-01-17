@@ -2,6 +2,7 @@
 layout: post
 title: Trip to Kumbakonam July 2014
 date: 2014-07-10 19:17:04.000000000 +05:30
+categories: blog travellogs
 ---
 This trip was planned initially to transfer some goods but later dropped off. We again planned for the trip over the first weekend of July 2014.
 Our initial plan was to see all the [Navagraha Temples](http://en.wikipedia.org/wiki/Navagraha_temples) kinda of little holy trip:P

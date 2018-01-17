@@ -1,537 +1,422 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Balaji Srinivasan</title>
-    <description></description>
-    <link>http://blog.balaaagi.me</link>
-    <atom:link href="http://blog.balaaagi.me/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Balaji's Blog</title>
+    <description>A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Awesome Assignment to learn Git</title>
-        <description>&lt;p&gt;It’s been nearly two weeks in the course and the journey so far has been so awesome.
-With assignments getting started feeling very very excited to learn things
-So in the Software Development Process course second assignment is to prove our ability for using &lt;a href=&quot;http://git-scm.com/&quot;&gt;git&lt;/a&gt; which is one of the best version control tool in the world.&lt;/p&gt;
+        <title>Devlog November 2017</title>
+        <description>&lt;p&gt;Writing Devlogs after so many months. Learning a new programming language is always fun. This time have started learning &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; for a new project. With Focussed on craftsmanship principles have started learning with &lt;a href=&quot;https://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;TDD&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I have been using git for past two years after learning it from online and using it effectively in Hackathons.
-But my usage was very limited compared to the real features it has.
-This assignment made me to make myself to learn more about git.&lt;/p&gt;
+&lt;p&gt;Have started writing tests using &lt;a href=&quot;http://rspec.info/&quot;&gt;Rspec&lt;/a&gt; a BDD for ruby.&lt;/p&gt;
 
-&lt;p&gt;The assignment is provided with private repo in &lt;a href=&quot;https://github.com&quot;&gt;Github&lt;/a&gt; for the course students alone. For each students a private repository is created. 
-I also came to know about the cheat sheet of git commands from &lt;a href=&quot;https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Below are the few techniques that help us in creating reports for the tests we have written&lt;/p&gt;
 
-&lt;p&gt;The assignment asked to perform a set of activities. It has more steps and activities. At the end we need to confirm if our Network graph from our Github should match with the one they have provided. In case if we have missed any steps obviously the graph would be wrong and we may not score well. &lt;/p&gt;
+&lt;p&gt;Sample Project Structure&lt;/p&gt;
 
-&lt;p&gt;In order to score well I ensured that I practise the steps in few repos multiple time to ensure that I get correct graph. During this course I missed of lot things because I was unaware of the commands. By practising in other repos before submitting my assignment ensured that I learnt a lot of commands which are required for better colloborations among team members when working on &lt;a href=&quot;https://github.com&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+├── lib
+│   └── shoppingcart.rb
 
-&lt;p&gt;The following are the commands I learnt &lt;/p&gt;
+└── spec
+    ├── shopping_cart_spec.rb
+    └── spec_helper.rb
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;code-coverage&quot;&gt;Code Coverage&lt;/h2&gt;
+
+&lt;p&gt;In order for Code coverage we need to know how our tests are written against the line coverage. In order do that with Rspec I used &lt;a href=&quot;https://github.com/colszowka/simplecov&quot;&gt;simplecov&lt;/a&gt;. Below are the configuration to make in &lt;code class=&quot;highlighter-rouge&quot;&gt;spec_helper.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+require 'simplecov'
+SimpleCov.minimum_coverage 70
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Above configuration is for setting the minimum coverage required. Need to explore how to link this with build.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SimpleCov.start do
+  add_filter &quot;/spec/&quot;
+end
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This line is to ignore the specs folder.&lt;/p&gt;
+
+&lt;p&gt;With this if you run the tests using command &lt;code class=&quot;highlighter-rouge&quot;&gt;rspec&lt;/code&gt; folder structure will become as follows. index.html gives a good coverage report with basic layout&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+├── coverage
+│   ├── assets
+│   │   └── 0.10.2
+│   │       ├── application.css
+│   │       ├── application.js
+│   │       ├── colorbox
+│   │       │   ├── border.png
+│   │       │   ├── controls.png
+│   │       │   ├── loading_background.png
+│   │       │   └── loading.gif
+│   │       ├── favicon_green.png
+│   │       ├── favicon_red.png
+│   │       ├── favicon_yellow.png
+│   │       ├── loading.gif
+│   │       ├── magnify.png
+│   │       └── smoothness
+│   │           └── images
+│   │               ├── ui-bg_flat_0_aaaaaa_40x100.png
+│   │               ├── ui-bg_flat_75_ffffff_40x100.png
+│   │               ├── ui-bg_glass_55_fbf9ee_1x400.png
+│   │               ├── ui-bg_glass_65_ffffff_1x400.png
+│   │               ├── ui-bg_glass_75_dadada_1x400.png
+│   │               ├── ui-bg_glass_75_e6e6e6_1x400.png
+│   │               ├── ui-bg_glass_95_fef1ec_1x400.png
+│   │               ├── ui-bg_highlight-soft_75_cccccc_1x100.png
+│   │               ├── ui-icons_222222_256x240.png
+│   │               ├── ui-icons_2e83ff_256x240.png
+│   │               ├── ui-icons_454545_256x240.png
+│   │               ├── ui-icons_888888_256x240.png
+│   │               └── ui-icons_cd0a0a_256x240.png
+│   └── index.html
+├── lib
+│   └── shoppingcart.rb
+└── spec
+    ├── shopping_cart_spec.rb
+    └── spec_helper.rb
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;unit--testing-results&quot;&gt;Unit  Testing Results&lt;/h2&gt;
+
+&lt;p&gt;For unit test results and status of tests passed or failed we can use the default &lt;code class=&quot;highlighter-rouge&quot;&gt;rspec&lt;/code&gt; configurations as below. In the root of our project there will be one file name &lt;code class=&quot;highlighter-rouge&quot;&gt;.rspec&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It will have the default contents as &lt;code class=&quot;highlighter-rouge&quot;&gt;--require spec_helper&lt;/code&gt; alone. We need to add the below lines to get the status of testing as html file.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;--format html
+--out rspec_results.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This will create a file name &lt;code class=&quot;highlighter-rouge&quot;&gt;rspec_results.html&lt;/code&gt; in our root folder which shows the test status in html.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 24 Nov 2017 13:51:41 +0530</pubDate>
+        <link>http://localhost:4000/devlogs/2017/11/24/devlog24112017/</link>
+        <guid isPermaLink="true">http://localhost:4000/devlogs/2017/11/24/devlog24112017/</guid>
+      </item>
+    
+      <item>
+        <title>97- Things every Developer must Know - Book Notes</title>
+        <description>&lt;p&gt;This year have taken a resolution to read lot of books in various generes. I love technology and always love coding and being called as a developer. I started reading a book &lt;a href=&quot;https://www.goodreads.com/book/show/7003902-97-things-every-programmer-should-know&quot;&gt;97 Things Every Programmer Should Know: Collective Wisdom from the Experts&lt;/a&gt; by Kevlin Henney.&lt;/p&gt;
+
+&lt;p&gt;It’s collection of wisdom thoughts that we should always remember in life as long as we are programming. Below are my short notes about the various thoughts discussed in the book.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;git stash&lt;/code&gt;-used when there is a dirty local and you want to pull. this command ensures that local repo hides those dirty&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git merge&lt;/code&gt;- used to merge a another branch to the current branch&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git push -u origin all&lt;/code&gt;- used to push all branches to the remote&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git branch&lt;/code&gt;- to know which branch currently we are working&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git checkout &amp;lt;branchname&amp;gt;&lt;/code&gt;- to checkout a branch i.e to change the current working branch&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git checkout -b &amp;lt;branchname&amp;gt; origin/&amp;lt;branchname&amp;gt;&lt;/code&gt;- to checkout the branch in remote and create the same branch locally when there are many branches in remote&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git pull &amp;lt;branchname&amp;gt;&lt;/code&gt;- to pull a branch from remote to the local&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git fetch origin&lt;/code&gt;- to fetch all the branches from remote to local&lt;/li&gt;
-  &lt;li&gt;To merge a conflict either modify the changes manually and use &lt;code&gt;git add &amp;lt;filename&amp;gt;&lt;/code&gt;. Later do the commit neccessary&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git tag&lt;/code&gt;- Lists the tags present in the repository. This is similar to Branches &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git tag -a &amp;lt;tag name&amp;gt; -m &amp;lt;message for the tag&amp;gt;&lt;/code&gt;- Add a tag to the repository&lt;/li&gt;
-  &lt;li&gt;Also learnt about &lt;a href=&quot;https://help.github.com/articles/about-repository-graphs/&quot;&gt;Network graph&lt;/a&gt; which will show the history of a branch of the repository.&lt;/li&gt;
+  &lt;li&gt;Always develop things that you will use when you are the user of the product- Developers should think from user perspective always.&lt;/li&gt;
+  &lt;li&gt;Never Refactor just because u wanted to refactor.Do it with a meaning. Best approach to refactor legacy code base is to write tests for existing code and start refactoring to understand the implications&lt;/li&gt;
+  &lt;li&gt;Developers should never blame others for every mistakes. It is always good to see our code first before blaming someone else.&lt;/li&gt;
+  &lt;li&gt;Code in domain. Write variables/functions in the domain for which you are coding. Our code should be read like poem in that domain.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;This was really fun in doing this assignment. &lt;/p&gt;
-
 </description>
-        <pubDate>Sun, 18 Jan 2015 00:00:00 +0530</pubDate>
-        <link>http://blog.balaaagi.me/omscs/awesomeassigntolearngit</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/omscs/awesomeassigntolearngit</guid>
+        <pubDate>Mon, 10 Apr 2017 00:01:58 +0530</pubDate>
+        <link>http://localhost:4000/blog/booklogs/2017/04/10/97thingsbooknotes/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/booklogs/2017/04/10/97thingsbooknotes/</guid>
       </item>
     
       <item>
-        <title>Hurray Results Came</title>
-        <description>&lt;p&gt;Since I have applied the earlier they were able to evaluate my application in a very lesuirely way and update me on the status very soon. Yes!!&lt;/p&gt;
+        <title>My look Ahead for  Q2 2017</title>
+        <description>&lt;p&gt;These are the plans for my Q2 of 2017. Since I was able to achieve only 25% of the plan in Q1 moving few to this quarter and more focussed.
+I would say this quarter is more focused on becoming an expert in Android&lt;/p&gt;
 
-&lt;p&gt;I received my application decision on October 7, 2014. The mail stated “Application decision is available”.&lt;/p&gt;
+&lt;h3 id=&quot;health&quot;&gt;Health&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Eat food on time and regularly avoid junk foods&lt;/li&gt;
+  &lt;li&gt;Run/Walk daily 3-4 kms&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Was very confident this time at the same time was very tensed when I was clicking the link. 
-Literally I was shiverring in my chair. &lt;/p&gt;
+&lt;h3 id=&quot;personal-life&quot;&gt;Personal Life&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spend more time with family&lt;/li&gt;
+  &lt;li&gt;Learn car driving and ensure to get license&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;On clicling applyweb portal URL I need to open the Decision available PDF to check my decision. &lt;/p&gt;
+&lt;h3 id=&quot;self-improvement&quot;&gt;Self Improvement&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Make reading a regular habbit.Ensure to read atleast 5 books under various categories before end of March, 2017&lt;/li&gt;
+  &lt;li&gt;Make writing a regular habit. Ensure to write devlogs and learning logs atleast regularly.Atleast write more about the android learning in android logs&lt;/li&gt;
+  &lt;li&gt;Publish as many Android apps in Play Store to get a decent profile in the play store and become an expert in Android.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Until I find some positive words like ‘happy’,’glad’,’congratulations’ I din read the full decision letter.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Apr 2017 00:01:58 +0530</pubDate>
+        <link>http://localhost:4000/blog/2017/04/02/lookaheadq2_2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/04/02/lookaheadq2_2017/</guid>
+      </item>
+    
+      <item>
+        <title>My look Ahead for  Q1 2017</title>
+        <description>&lt;h3 id=&quot;updated-at-end-of-q1-see-recent-blog-on-my-plan-for-next-quarter&quot;&gt;Updated At End of Q1 See recent blog on my plan for next quarter&lt;/h3&gt;
 
-&lt;p&gt;Yeah those words were there. Immediately read the full letter and confirmed that I was successfully admitted to the program. &lt;/p&gt;
+&lt;p&gt;Planning for the year has been to over confidence. Hence I have started planning for short durations. Exactly for three months tenure which we call in corporates as Quarters. Below is the look ahead for my Q1 2017. It contains various categories under which I plan to achieve&lt;/p&gt;
 
-&lt;p&gt;I was reading those decision letter multiple times that day. Was very glad and happy. Dunno who to say my happiness. Wanted to thank lot of people for this.&lt;/p&gt;
+&lt;h3 id=&quot;health&quot;&gt;Health&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Eat food on time and regularly avoid junk foods&lt;/li&gt;
+  &lt;li&gt;Run/Walk daily 3-4 kms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;personal-life&quot;&gt;Personal Life&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spend more time with family&lt;/li&gt;
+  &lt;li&gt;Learn car driving and ensure to get license&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;self-improvement&quot;&gt;Self Improvement&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;del&gt;Make reading a regular habbit.Ensure to read atleast 5 books under various categories before end of March, 2017&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;Make writing a regular habit. Ensure to write devlogs and learning logs atleast regularly.&lt;/li&gt;
+  &lt;li&gt;Publish as many Android apps in Play Store to get a decent profile in the play store and become an expert in Android.&lt;/li&gt;
+  &lt;li&gt;Complete Andrew N G Machine Learning course before the deadline with certificate&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 02 Jan 2017 00:01:58 +0530</pubDate>
+        <link>http://localhost:4000/blog/2017/01/02/lookaheadq1_2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/01/02/lookaheadq1_2017/</guid>
+      </item>
+    
+      <item>
+        <title>Computer Photography- Week 1 LearnLog</title>
+        <description>&lt;p&gt;This term I am taking Computer Photography course which gives us better insights on the computations involved in image processing.&lt;/p&gt;
+
+&lt;p&gt;Below is the learn log for the first week of the course.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;There are various modules provided in the course. Below are the list of modules and topics covered under them&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;I actually wanted to convey this to my parents but they were sleeping so keeping this happy news for them next day&lt;/li&gt;
-  &lt;li&gt;Immediately whatsapped my sissys &lt;a href=&quot;https://www.facebook.com/annapoorani.srinivasan.79&quot;&gt;Jayasree&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/karpagam.srinivasan.37&quot;&gt;Aparna&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Next messaged my friends who helped me to go through the phase of failure from last admit rejection and encouraged me to apply again
-&lt;a href=&quot;https://www.facebook.com/madhava6688&quot;&gt;Madhava Jayamani&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/sukanya.kalaichelvan&quot;&gt;Sukanya&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Whatsapped my well wisher and my mentor in Office &lt;a href=&quot;https://www.facebook.com/desikan.rajesh&quot;&gt;Rajesh&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Introduction&lt;/li&gt;
+  &lt;li&gt;More about Filters&lt;/li&gt;
+  &lt;li&gt;Deep learning about cameras&lt;/li&gt;
+  &lt;li&gt;Image blending/munging&lt;/li&gt;
+  &lt;li&gt;Computational Photography&lt;/li&gt;
+  &lt;li&gt;Videos Computations&lt;/li&gt;
+  &lt;li&gt;Computational Cameras&lt;/li&gt;
+  &lt;li&gt;Advanced Topics - Special Cases&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Then I slept very happily. Next morning conveyed the happy news to parents they were also very happy. After that I left to office.
-When reaching office only I realized that the message to Madhava was not delivered. Actually October 8 is his birthday. I called to wish him but din wish him first instead started with this news and was very thankful for him for his help for the application also wished him for becoming old more…&lt;/p&gt;
+&lt;p&gt;The main expectations of the class is to learn about the tech related to photography.&lt;/p&gt;
 
-&lt;p&gt;As people started coming to office first approached their desk and just showed the decision letter to them. Indeed was very happy that day.This is what I did &lt;br /&gt;
-* &lt;a href=&quot;https://www.facebook.com/benita.gabriella&quot;&gt;Benita&lt;/a&gt;- English mummy who corrected my grammer and &lt;a href=&quot;https://www.facebook.com/sukanya.kalaichelvan&quot;&gt;Sukanya&lt;/a&gt;&lt;br /&gt;
-* &lt;a href=&quot;https://www.facebook.com/santio.ruban&quot;&gt;Santio&lt;/a&gt;- English sir who helped in making my huge huge huge huge essay to the required size&lt;br /&gt;
-* &lt;a href=&quot;https://www.facebook.com/alok.rout&quot;&gt;Alok&lt;/a&gt;- Guy who is gud at english also always point at my english mistakes.Helped me in refining my application.&lt;br /&gt;
-* Satish- My manager who is my boss also was one who wrote a letter of recommendation for my application amidst his tight schedule.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;“Love to learn computing with photographs”&lt;/p&gt;
 
-&lt;h4 id=&quot;i-would-like-to-thank-you-all-of-the-people-who-have-helped-getting-this-admit-please-forgive-in-case-if-i-have-missed-anyone-name-in-the-list&quot;&gt;I would like to Thank You all of the people who have helped getting this admit. Please forgive in case if I have missed anyone name in the list&lt;/h4&gt;
-&lt;center&gt;THANKS ALL!!!&lt;/center&gt;
+&lt;h2 id=&quot;what-is-computational-photography&quot;&gt;What is Computational Photography?&lt;/h2&gt;
 
+&lt;p&gt;To understand computational photography we should understand what is Photography?
+Photography - is way of recording light either electronically or chemically to generate artifacts&lt;/p&gt;
+
+&lt;p&gt;Computational Photography is the complete workflow of how light is captured and image is produced&lt;/p&gt;
+
+&lt;h2 id=&quot;dual-photography&quot;&gt;Dual Photography&lt;/h2&gt;
+
+&lt;p&gt;One of the example of CP. A research paper by Stanford.Main context is if we swap light source and camera rays of light get converted to novel form of image.
+   ### Novel Illumination
+   ### Also using the reflections we can get different images&lt;/p&gt;
+
+&lt;h2 id=&quot;panaromas&quot;&gt;Panaromas&lt;/h2&gt;
+
+&lt;p&gt;Wide angled image produced by combining various images in sequences taken together.&lt;/p&gt;
+
+&lt;h3 id=&quot;steps-involved-in-creating-panaromas&quot;&gt;Steps Involved in creating Panaromas&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Take Pictures&lt;/li&gt;
+  &lt;li&gt;Detecting and Matching&lt;/li&gt;
+  &lt;li&gt;Warping&lt;/li&gt;
+  &lt;li&gt;Fade, Blend/Cut&lt;/li&gt;
+  &lt;li&gt;Cropping(Optional)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;types-of-panaromas&quot;&gt;Types of Panaromas&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Planar/Rectilinear&lt;/li&gt;
+  &lt;li&gt;Vertical&lt;/li&gt;
+  &lt;li&gt;Cylindrical/Rotational&lt;/li&gt;
+  &lt;li&gt;Path/Route&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-computational-photography&quot;&gt;Why Computational Photography?&lt;/h2&gt;
+
+&lt;p&gt;In this chapter we learnt about the pevasiveness of photography&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Why should we study camera?&lt;/li&gt;
+  &lt;li&gt;Cameras and Everywhere- Detailed analysis of camera sales over various periods&lt;/li&gt;
+  &lt;li&gt;About various images
+    &lt;ul&gt;
+      &lt;li&gt;Participatory Images&lt;/li&gt;
+      &lt;li&gt;Institutional Images&lt;/li&gt;
+      &lt;li&gt;Incidental Images&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Main objective of learning computational photography is to understand how cameras can be evolved in next 10 + years. Also the social culture change due to it. Also improving image search methods.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 26 Dec 2014 00:00:00 +0530</pubDate>
-        <link>http://blog.balaaagi.me/omscs/hurrayresultscame</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/omscs/hurrayresultscame</guid>
+        <pubDate>Mon, 29 Aug 2016 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/omscs/2016/08/29/CPWeek1/</link>
+        <guid isPermaLink="true">http://localhost:4000/omscs/2016/08/29/CPWeek1/</guid>
       </item>
     
       <item>
-        <title>Target GA Tech</title>
-        <description>&lt;p&gt;After starting learning a lot from online MOOC courses planned to pursue to do a graduate degree course via online. Was searching for the same for a while whole throughout the year and that which impressed and which made me more eager towards becoming a student in OMSCS-Online Master’s in Computer Science from &lt;a href=&quot;http://www.omscs.gatech.edu/&quot;&gt;Georgia Tech&lt;/a&gt;. &lt;/p&gt;
+        <title>Devlogs</title>
+        <description>&lt;p&gt;In order to get my knowledge more on Machine Learning started learning &lt;a href=&quot;http://spark.apache.org/&quot;&gt;Apache Spark&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;With the failure for getting admit through the Fall 2014 was very much determined that somehow should get admit and start learning from the leaders of computing. It was not just for a degree I wanted to get from US university that I planning for this course. It was mainly for to improve my expertise in computer field also. It was not for getting H1B visa. It was to get specialized in one of a particular field of computing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.edx.org/&quot;&gt;Edx&lt;/a&gt; gave an XSeries provided by databricks. There are totally three courses altogether&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduction to Apache Spark&lt;/li&gt;
+  &lt;li&gt;Distributed Machine Learning With Apache Spark&lt;/li&gt;
+  &lt;li&gt;Big Data Analysis with Apache Spark&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Also I am planning to learn because I can learn more and build my profile more compared to how I am doing in order to do the work I only love.&lt;/p&gt;
+&lt;p&gt;Due to the budget constraints I am not going to register for the verified track. Since need to save some money for my OMSCS courses.&lt;/p&gt;
 
-&lt;p&gt;With these mind and also the first application being rejected was eagerly waiting for the dates to be announced. Actually this time I was preparing my essays well. I gave it to various set of persons such that it does not have any silly grammatical mistakes. Also it is upto the standard of an essay that for sure will get an admit. Also kept my recommenders well in advance such that they don’t miss the deadlines and make their recommendations on time.&lt;/p&gt;
+&lt;p&gt;In coming days I will writing about my learnings in the course via the blog.&lt;/p&gt;
 
-&lt;p&gt;When the dates where announced I started filling the application from day 1. I also made a checklist in &lt;a href=&quot;https://hackpad.com&quot;&gt;Hackpad&lt;/a&gt; for the list of items to be done like essay review, marksheets scanning, TOEFL score etc..This time was very much determined to get into the esteemed university. I completed my application for SPRING 2015 by September 17, 2014. Which was very early even though I have so much days for the deadline. I submitted so early because last time those who registered at last moment where rejected due to the seats where filled. I know University won’t admit make admissions based on First in basis. There might be major other factors which would have caused their rejecttions like me for poor essays which is their only source of information about me.&lt;/p&gt;
-
+&lt;p&gt;Hoping to complete all the three courses in two/three months duration.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 25 Dec 2014 00:00:00 +0530</pubDate>
-        <link>http://blog.balaaagi.me/omscs/targetGATech</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/omscs/targetGATech</guid>
+        <pubDate>Thu, 04 Aug 2016 03:32:41 +0530</pubDate>
+        <link>http://localhost:4000/devlogs/2016/08/04/devlog04082016/</link>
+        <guid isPermaLink="true">http://localhost:4000/devlogs/2016/08/04/devlog04082016/</guid>
       </item>
     
       <item>
-        <title>South TamilNadu Trip 2014</title>
-        <description>&lt;p&gt;This trip was planned such that we will be attending my collegue’s &lt;a href=&quot;https://www.facebook.com/annamalai.ravi1&quot;&gt;Annamalai&lt;/a&gt;’s marriage.&lt;/p&gt;
+        <title>Reinforcement Learning</title>
+        <description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Travellers&lt;/strong&gt;- &lt;a href=&quot;www.balaaagi.me&quot;&gt;Myself&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/alok.rout&quot;&gt;Alok&lt;/a&gt; , &lt;a href=&quot;https://www.facebook.com/Gautham.Theertharaj&quot;&gt;Gautham&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/karthik.chandrasekaran.9&quot;&gt;Karthik&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/naveen.selvaraj.94&quot;&gt;Naveen&lt;/a&gt;
-&lt;strong&gt;Mode&lt;/strong&gt;- Public Transport and Indica&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The whole activity of having a models function with rewards and identifying the policy is called as planning.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reinforcement Learning is learning in which the learner takes in transitions with source,desitination,action and rewards and identify the optimal policy in which we get the maximum reward.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Trip Day 0:September 3&lt;/strong&gt;&lt;br /&gt;
-The marriage was on September 4 near Sivaganga. We started the day before in travels bus from Chennai to Ottanchattiram where which is Naveen’s hometown. We boarded the bus at Perungalathur. But the journey started with some glitches. The bus while coming from Koyambedu got some problems and was stuck near Porur while coming via bi-pass. So the bus came late by around 1.5 hours.&lt;/p&gt;
+&lt;h3 id=&quot;approaches-to-reinforcement-learning&quot;&gt;Approaches to Reinforcement Learning&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Trip Day 1:September 4&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;We reached Naveen’s home around 8. The place was at the foothills of Palani hills.The climate was very pleasant. Since muhurtham time was around 12 we started getting ready for marriage in his home. We all planned to wear dhoti for the event. But we did not wear it there since two among us does not have the dhoti and Annamalai has arranged in his place for the same. &lt;/p&gt;
-
-&lt;p&gt;We started from Naveen’s place around 9:30 via Indica which Naveen has arranged via his friend in his place. It took around 3 hours to reach the venue of the marriage. But the journey was funny because we need 5+1 driver need to be accomodated in Indica which is a small car. As usual being the lean guy had to keep on rolling my seat over each lap for every half an hour. &lt;/p&gt;
-
-&lt;p&gt;On reaching the venue we got ready within half an hour because few of us it was first time we weared dhotis. Alok tried to wear it in North Indian style. He had practised in Chennai itself and it was looking nice for him.&lt;/p&gt;
-
-&lt;p&gt;By the time we reached marriage hall(actually home) most of the rituals were over. After wishing  Annamalai we started with our photo sessions for a while. Once most of the guests left for lunch in next street we took group photos with Annamalai and also got some time to talk with him. Actually in &lt;a href=&quot;http://en.wikipedia.org/wiki/Chettiar&quot;&gt;Chettiar&lt;/a&gt;, marriages  will be held in their family home in villages only. &lt;a href=&quot;http://www.tripadvisor.in/Hotel_Review-g1026932-d497854-Reviews-The_Bangala-Karaikudi_Tamil_Nadu.html#photos&quot;&gt;Chettiar Houses&lt;/a&gt; will be very grand and they were built long back. It has various levels and properly architected. Lot of woodworks also goes in.&lt;/p&gt;
-
-&lt;p&gt;After having lunch we went to another house in next street to watch all the utensils showcase(actually they are given to daughter for her marriage by her parents). Then we changed our costume and headed towards Madurai. We took some rest and started to &lt;a href=&quot;http://en.wikipedia.org/wiki/Meenakshi_Amman_Temple&quot;&gt;Meenakshmi Amman Temple&lt;/a&gt;. But due to some festival that is being held at the temple we were told we won’t be able to go for darshan. So we proceeded to &lt;a href=&quot;http://en.wikipedia.org/wiki/Thirumalai_Nayakkar_Mahal&quot;&gt;Thirumalai Nayakar Mahal&lt;/a&gt;. We drank the famous &lt;a href=&quot;http://en.wikipedia.org/wiki/Jil_jil_jigarthanda&quot;&gt;jigardhanda&lt;/a&gt; from the famous jigarthanda shop. Later we went to room which we have booked near railway station at College House. Karthik started back to Chennai. &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Trip Day 1:September 5&lt;/strong&gt;&lt;br /&gt;
-After a complete rest we planned to start to temple in early morning. But we started little late but we went to temple and was able to visit all the places inside the temples. By noon we started to Rameshwaram our next destiny. In the middle we delayed for some document work that needs to be done since it was travel vehicle. We thought we will have lunch at Rameshwaram. But seeing the delay we had it before near manamadurai around 3. Almost no shops were there. We went to a small shop and ate parotas and sambhars:P&lt;/p&gt;
-
-&lt;p&gt;It was around 4-5 we reached the famous &lt;a href=&quot;http://en.wikipedia.org/wiki/Pamban_Bridge&quot;&gt;Pamban bridge&lt;/a&gt; which connects the India with the island distict of TamilNadu, Rameshwaram. The climate was awesome we were having our photoshoots for a while and we proceeded. We did not plan anything and we did not book any rooms too. Atlast we found one awesome room for all 6 of us for cheaper rate. After a tiresome day full of travel we slept. &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Trip Day 1:September 6&lt;/strong&gt;&lt;br /&gt;
-Next day early morning we all got up went ahead to take the holy dip @ Bay of Bengal during sunrise. After having we went for the holy dips on the &lt;a href=&quot;http://en.wikipedia.org/wiki/Ramanathaswamy_Temple&quot;&gt;temple tanks&lt;/a&gt;. There are around twenty two tirthas(wells) withing the temple with each well tasting differently not salty but. After taking dip we changed our costumes and went for darshan. 
-Once the darshan is over we proceeded breakfast. We visited &lt;a href=&quot;http://en.wikipedia.org/wiki/Point_Calimere&quot;&gt;Ramarpatham&lt;/a&gt; and then we headed to &lt;a href=&quot;http://en.wikipedia.org/wiki/Dhanushkodi&quot;&gt;Danushkodi&lt;/a&gt; the south eastern tip of Tamil Nadu. &lt;/p&gt;
-
-&lt;p&gt;We payed for the haunted island visit cab service. Not sure whether we were lucky or not our cab got breakdown in starting itself. Then we boarded another cab and it took around 2 hours to go around the cyclone hit island. Only few remains were there here and there. The island was very silent.&lt;/p&gt;
-
-&lt;p&gt;After finishing the island trip we headed back to Chennai. On the way before reach Pamban we finished our lunch. Then headed directly to Ottanchattiram via Madurai. After having dinner at Naveen’s home we started back to Chennai that night.&lt;/p&gt;
-
-&lt;p&gt;It was nice trip with different experience with new set of people.&lt;/p&gt;
-
-&lt;p&gt;For our trip photos as a story please visit &lt;a href=&quot;https://plus.google.com/117781641734381792875/stories/0123b1cf-2705-3012-aa1a-07faa3b129a61486c567ce5&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
+&lt;ul&gt;
+  &lt;li&gt;States to action- Policy Search algorithm trying to find policy –&amp;gt; Direct Use but indirect Learning&lt;/li&gt;
+  &lt;li&gt;Utility to State - Value function based approaches are used for observe the values for each state and actions.&lt;/li&gt;
+  &lt;li&gt;Transition Function/Model - Predicts next states or rewards - Model Based –&amp;gt; Indirect Use but direct learning&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Fri, 12 Sep 2014 08:17:04 +0530</pubDate>
-        <link>http://blog.balaaagi.me/trip-to-south-tamilnadu</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/trip-to-south-tamilnadu</guid>
+        <pubDate>Wed, 20 Apr 2016 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/omscs/2016/04/20/rl1/</link>
+        <guid isPermaLink="true">http://localhost:4000/omscs/2016/04/20/rl1/</guid>
       </item>
     
       <item>
-        <title>South TamilNadu Trip 2014</title>
-        <description>&lt;p&gt;This trip was planned such that we will be attending my collegue’s &lt;a href=&quot;https://www.facebook.com/annamalai.ravi1&quot;&gt;Annamalai&lt;/a&gt;’s marriage.&lt;/p&gt;
+        <title>Reinforcement Learning - Markov Decision Process</title>
+        <description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Travellers&lt;/strong&gt;- &lt;a href=&quot;www.balaaagi.me&quot;&gt;Myself&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/alok.rout&quot;&gt;Alok&lt;/a&gt; , &lt;a href=&quot;https://www.facebook.com/Gautham.Theertharaj&quot;&gt;Gautham&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/karthik.chandrasekaran.9&quot;&gt;Karthik&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/naveen.selvaraj.94&quot;&gt;Naveen&lt;/a&gt;
-&lt;strong&gt;Mode&lt;/strong&gt;- Public Transport and Indica&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In Supervised learning we are given &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; and we should find the &lt;code class=&quot;highlighter-rouge&quot;&gt;f(x)&lt;/code&gt;using function approximation techniques.&lt;/li&gt;
+  &lt;li&gt;In Unsupervised learning we are give &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and we should using clustering methods to find the &lt;code class=&quot;highlighter-rouge&quot;&gt;f(x)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Trip Day 0:September 3&lt;/strong&gt;&lt;br /&gt;
-The marriage was on September 4 near Sivaganga. We started the day before in travels bus from Chennai to Ottanchattiram where which is Naveen’s hometown. We boarded the bus at Perungalathur. But the journey started with some glitches. The bus while coming from Koyambedu got some problems and was stuck near Porur while coming via bi-pass. So the bus came late by around 1.5 hours.&lt;/p&gt;
+&lt;h4 id=&quot;reinforcement-learning&quot;&gt;Reinforcement Learning&lt;/h4&gt;
 
-&lt;p&gt;&lt;strong&gt;Trip Day 1:September 4&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In reinforcement learning we are given &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;z&lt;/code&gt; we should find &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;f(x)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;We reached Naveen’s home around 8. The place was at the foothills of Palani hills.The climate was very pleasant. Since muhurtham time was around 12 we started getting ready for marriage in his home. We all planned to wear dhoti for the event. But we did not wear it there since two among us does not have the dhoti and Annamalai has arranged in his place for the same. &lt;/p&gt;
+&lt;p&gt;## Markov Decision Process&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;States- Each step or states&lt;/li&gt;
+  &lt;li&gt;Actions - Actions that can be taken in a particular state&lt;/li&gt;
+  &lt;li&gt;Models - Transition steps in which it changes from one state to another state using particular action&lt;/li&gt;
+  &lt;li&gt;Rewards - Rewards you get when you perform some action or when you reach a state or when you reach a state from another state using an action&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;We started from Naveen’s place around 9:30 via Indica which Naveen has arranged via his friend in his place. It took around 3 hours to reach the venue of the marriage. But the journey was funny because we need 5+1 driver need to be accomodated in Indica which is a small car. As usual being the lean guy had to keep on rolling my seat over each lap for every half an hour. &lt;/p&gt;
+&lt;p&gt;### Properties:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Only Present state matter&lt;/li&gt;
+  &lt;li&gt;Actions/States are stationery&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;On reaching the venue we got ready within half an hour because few of us it was first time we weared dhotis. Alok tried to wear it in North Indian style. He had practised in Chennai itself and it was looking nice for him.&lt;/p&gt;
+&lt;p&gt;### Policy
+  Given a particular state a policy will suggest you a particular action to be taken
+  ### Optimal Policy
+  It is a policy which will help in optimize in receiving a maximum rewards.&lt;/p&gt;
 
-&lt;p&gt;By the time we reached marriage hall(actually home) most of the rituals were over. After wishing  Annamalai we started with our photo sessions for a while. Once most of the guests left for lunch in next street we took group photos with Annamalai and also got some time to talk with him. Actually in &lt;a href=&quot;http://en.wikipedia.org/wiki/Chettiar&quot;&gt;Chettiar&lt;/a&gt;, marriages  will be held in their family home in villages only. &lt;a href=&quot;http://www.tripadvisor.in/Hotel_Review-g1026932-d497854-Reviews-The_Bangala-Karaikudi_Tamil_Nadu.html#photos&quot;&gt;Chettiar Houses&lt;/a&gt; will be very grand and they were built long back. It has various levels and properly architected. Lot of woodworks also goes in.&lt;/p&gt;
+&lt;p&gt;Hence in reinforcement learning &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; refers to state, &lt;code class=&quot;highlighter-rouge&quot;&gt;z&lt;/code&gt; refers to rewards
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; refers to the actions and &lt;code class=&quot;highlighter-rouge&quot;&gt;f(x)&lt;/code&gt; refers to the optimal policy&lt;/p&gt;
 
-&lt;p&gt;After having lunch we went to another house in next street to watch all the utensils showcase(actually they are given to daughter for her marriage by her parents). Then we changed our costume and headed towards Madurai. We took some rest and started to &lt;a href=&quot;http://en.wikipedia.org/wiki/Meenakshi_Amman_Temple&quot;&gt;Meenakshmi Amman Temple&lt;/a&gt;. But due to some festival that is being held at the temple we were told we won’t be able to go for darshan. So we proceeded to &lt;a href=&quot;http://en.wikipedia.org/wiki/Thirumalai_Nayakkar_Mahal&quot;&gt;Thirumalai Nayakar Mahal&lt;/a&gt;. We drank the famous &lt;a href=&quot;http://en.wikipedia.org/wiki/Jil_jil_jigarthanda&quot;&gt;jigardhanda&lt;/a&gt; from the famous jigarthanda shop. Later we went to room which we have booked near railway station at College House. Karthik started back to Chennai. &lt;/p&gt;
+&lt;p&gt;### Temporal Credit Assignment
+  Identifying the action of which made us to get the rewards or for the given state we are in what was sequence of actions that was taken.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Trip Day 1:September 5&lt;/strong&gt;&lt;br /&gt;
-After a complete rest we planned to start to temple in early morning. But we started little late but we went to temple and was able to visit all the places inside the temples. By noon we started to Rameshwaram our next destiny. In the middle we delayed for some document work that needs to be done since it was travel vehicle. We thought we will have lunch at Rameshwaram. But seeing the delay we had it before near manamadurai around 3. Almost no shops were there. We went to a small shop and ate parotas and sambhars:P&lt;/p&gt;
+&lt;p&gt;Carefully choosing the rewards will determine the end results.&lt;/p&gt;
 
-&lt;p&gt;It was around 4-5 we reached the famous &lt;a href=&quot;http://en.wikipedia.org/wiki/Pamban_Bridge&quot;&gt;Pamban bridge&lt;/a&gt; which connects the India with the island distict of TamilNadu, Rameshwaram. The climate was awesome we were having our photoshoots for a while and we proceeded. We did not plan anything and we did not book any rooms too. Atlast we found one awesome room for all 6 of us for cheaper rate. After a tiresome day full of travel we slept. &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Trip Day 1:September 6&lt;/strong&gt;&lt;br /&gt;
-Next day early morning we all got up went ahead to take the holy dip @ Bay of Bengal during sunrise. After having we went for the holy dips on the &lt;a href=&quot;http://en.wikipedia.org/wiki/Ramanathaswamy_Temple&quot;&gt;temple tanks&lt;/a&gt;. There are around twenty two tirthas(wells) withing the temple with each well tasting differently not salty but. After taking dip we changed our costumes and went for darshan. 
-Once the darshan is over we proceeded breakfast. We visited &lt;a href=&quot;http://en.wikipedia.org/wiki/Point_Calimere&quot;&gt;Ramarpatham&lt;/a&gt; and then we headed to &lt;a href=&quot;http://en.wikipedia.org/wiki/Dhanushkodi&quot;&gt;Danushkodi&lt;/a&gt; the south eastern tip of Tamil Nadu. &lt;/p&gt;
-
-&lt;p&gt;We payed for the haunted island visit cab service. Not sure whether we were lucky or not our cab got breakdown in starting itself. Then we boarded another cab and it took around 2 hours to go around the cyclone hit island. Only few remains were there here and there. The island was very silent.&lt;/p&gt;
-
-&lt;p&gt;After finishing the island trip we headed back to Chennai. On the way before reach Pamban we finished our lunch. Then headed directly to Ottanchattiram via Madurai. After having dinner at Naveen’s home we started back to Chennai that night.&lt;/p&gt;
-
-&lt;p&gt;It was nice trip with different experience with new set of people.&lt;/p&gt;
-
-&lt;p&gt;For our trip photos as a story please visit &lt;a href=&quot;https://plus.google.com/117781641734381792875/stories/0123b1cf-2705-3012-aa1a-07faa3b129a61486c567ce5&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;## Sequence of Rewards&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;infinite-horizons&quot;&gt;Infinite Horizons&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;We have ample time or no of steps to reach destination. Hence being stationery in fine.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;finite-horizons&quot;&gt;Finite Horizons&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Depending on the time or no of steps our actions differs
+Hence policy can be defined as the factors of both states and times
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;utility-of-sequences&quot;&gt;Utility of Sequences&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Rewards we get via a sequence of states
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Fri, 12 Sep 2014 08:17:04 +0530</pubDate>
-        <link>http://blog.balaaagi.me/blog/trip-to-south-tamilnadu</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/blog/trip-to-south-tamilnadu</guid>
+        <pubDate>Wed, 13 Apr 2016 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/omscs/2016/04/13/rlmdp/</link>
+        <guid isPermaLink="true">http://localhost:4000/omscs/2016/04/13/rlmdp/</guid>
       </item>
     
       <item>
-        <title>Trip to Kumbakonam July 2014</title>
-        <description>&lt;p&gt;This trip was planned initially to transfer some goods but later dropped off. We again planned for the trip over the first weekend of July 2014.
-Our initial plan was to see all the &lt;a href=&quot;http://en.wikipedia.org/wiki/Navagraha_temples&quot;&gt;Navagraha Temples&lt;/a&gt; kinda of little holy trip:P&lt;/p&gt;
+        <title>UnSupervised Learning - Optimization</title>
+        <description>&lt;p&gt;In the lecture series so far in the Supervised Learning we have learnt the various topics as below&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Travellers&lt;/strong&gt;- &lt;a href=&quot;www.balaaagi.me&quot;&gt;Myself&lt;/a&gt;,&lt;a href=&quot;https://www.facebook.com/komahanpaulraj&quot;&gt;Ko&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/dinesh.rajee.7&quot;&gt;Dinesh&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/profile.php?id=1781440509&quot;&gt;Manoj&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;Mode&lt;/strong&gt;-Road by Maruti Swift&lt;/p&gt;
+&lt;h2 id=&quot;neural-networks&quot;&gt;Neural Networks&lt;/h2&gt;
+&lt;h2 id=&quot;ensemble-learning---boosting&quot;&gt;Ensemble Learning - Boosting&lt;/h2&gt;
+&lt;h2 id=&quot;svms-or-kernal-methods&quot;&gt;SVMS or Kernal Methods&lt;/h2&gt;
+&lt;h2 id=&quot;computation-learning-theory&quot;&gt;Computation Learning Theory&lt;/h2&gt;
+&lt;h2 id=&quot;vc-dimensions&quot;&gt;VC Dimensions&lt;/h2&gt;
+&lt;h2 id=&quot;bayesian-learning&quot;&gt;Bayesian Learning&lt;/h2&gt;
+&lt;h2 id=&quot;bayesian-inference&quot;&gt;Bayesian Inference&lt;/h2&gt;
 
-&lt;p&gt;As part of the initial planning I researched on the routes for the temples from Kumbakonam. The first search result provided some good map route which seems to cover the whole &lt;a href=&quot;http://en.wikipedia.org/wiki/Kumbakonam&quot;&gt;Kumbakonam district&lt;/a&gt;.&lt;a href=&quot;http://kumbakonamtemples.in/navagraha-temple-route-maps.html&quot;&gt;This link&lt;/a&gt; was what we had as base for our trip.&lt;/p&gt;
+&lt;p&gt;Almost ready for the midterm. But need to learn various proofs or examples from the Textbook to getter better understanding.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Trip Day 1- July 5, 2014&lt;/strong&gt;&lt;br /&gt;
-I packed myself for the trip took my Mac also along with since had few assignments that need to be completed thought would finish over the travel in car. We started around 6:30 AM as usual we delayed by half an hour leading us to drop in total plan. Our first stop was near &lt;a href=&quot;http://en.wikipedia.org/wiki/Madras_Export_Processing_Zone&quot;&gt;MEPZ&lt;/a&gt; for breakfast. We had our breakfast in GK hotel which is famous in GST road.
-After the breakfast it time to burn the tyres. Dinesh was driving at consistent speed. We had a confusion on whether to reach Kumbakonam via Koliyanur Road or via Pondy–&amp;gt; Chidambaram…
-Later we confirmed that we will proceed with Pondy Route. But near Tindivanam we missed a left which made us to roam for another 1 hr. 
-Later we took Mailam road and reached Kallanai.
-In the meantime our mobile charges went down and the charger connected with the car does not charge the mobile phone.
-So we were lost. Later we tethered the internet from another mobile used by Mac to find the map route and proceeded. It was around 1:30 by the time when we reached Kumbakonam.
-We refreshed ourselves at Ko’s brother &lt;a href=&quot;https://www.facebook.com/palesh.paulraj&quot;&gt;Palesh&lt;/a&gt; anna’s residence and proceeded with our plan. But now our plan changed due to timings.&lt;/p&gt;
+&lt;p&gt;Service awards is awarded to people who have been with company for long terms. The way awards were distributed this time does not even reflect the respect given to their association with the company. Even notebooks or some voluntary distributions in CSR activities would have been done well. You would have already know the number of employees who would receive the award. Why there was no proper planning in distribution of the awards. Also not even our name was read out. Seriously award is losing its respect. Instead of giving such awards it would be better not to give an award. Literally the awards were distributed like how they donate foods in temples. Very poor planning!! Not even a leader congratulated even a single person who won the awards. This AHM was conducted as if it was done for namesake. If time does not permit why don’t a separate function be arranged for just awards and recognitions. Also not sure if the usual sodexo pass which will be given for the&lt;/p&gt;
 
-&lt;p&gt;So we headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Brihadeeswarar_Temple&quot;&gt;Tanjore Big Temple&lt;/a&gt; which is around 40kms from Kumbakonam. We reached there before the sunset and we were able to view the temple towers in sunlight. Later we headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Kailasanthar_Temple,Thingalur&quot;&gt;Thingalur Moon Temple&lt;/a&gt; which was 14 km in North from the Big temple. By the time we reached there it was almost 6-7. Later we moved towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Swaminathaswamy_Temple,_Swamimalai&quot;&gt;Swamimalai&lt;/a&gt; . It started to rain heavily when we came out after offering our prayers. We halted for a while and started and headed towards Kumbakonam. 
-It was raining heavily in Kumbakonam. Also the streets of Kumbakonam were flooded. Whatever routes we took to reach the residence for sure car would start to float. Water level were so high. We were roaming for all routes like this for an hour. After which we somehow found a street and drove fast to our street. In the street there was no flood it was little elevated compared to other streets. We escaped:P&lt;/p&gt;
-
-&lt;p&gt;After we reached home all started to sleep since we have to start early next day. But I have not completed my code assignments hence was awake until aroun 1:00 AM and slept afterwards. It was raining till that time.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Trip Day 2- July 6 ,2014&lt;/strong&gt;&lt;br /&gt;
-We still have 8 more temples to see due to the change in plan and we have almost half a day since we have to head towards Chennai by atleast 3:00 PM. So we started early around 6:00 AM.
-We headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Thirunageswaram&quot;&gt;Rahu Temple&lt;/a&gt;. We finished there and visited the nearby &lt;a href=&quot;http://en.wikipedia.org/wiki/Uppiliappan_Temple&quot;&gt;Uppulipian Temple&lt;/a&gt;.The temple was closed until 9:00 AM due to some rituals. Hence we came out and had our breakfast to check whether as said by facts “all food outside the temple will not have salt!!”
-Later when the temple is opened for darshan we prayed and started from there to &lt;a href=&quot;http://en.wikipedia.org/wiki/Apatsahayesvarar_Temple,_Alangudi&quot;&gt;Jupiter Temple&lt;/a&gt;. From there we visited the &lt;a href=&quot;http://en.wikipedia.org/wiki/Suryanar_Kovil&quot;&gt;Sun Temple&lt;/a&gt; and later the &lt;a href=&quot;http://en.wikipedia.org/wiki/Agniswarar_Temple,_Kanjanur&quot;&gt;Venus Temple&lt;/a&gt;.
-It was almost lunch time. From there we headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Vaitheeswaran_Koil&quot;&gt;Vaiteeswaran Temple&lt;/a&gt;. On our way we had tugs with a local for hitting our car. It took us some time.
-By the time we reached the temple, they were about to close the premises for lunch time.We quickly prayed and came out before they close the temple.
-The place was famous for &lt;a href=&quot;http://en.wikipedia.org/wiki/Naadi&quot;&gt;Nadi Astrology&lt;/a&gt; and few of them were seeing it after we had our lunch. It was around 2 when we started back to Kumbakonam and within few minutes we started back to Chennai.
-This time we came via Koliyanur route which was pretty simple and clear. Throughout our journey towards Chennai we were being accompanied by heavy rain.&lt;/p&gt;
-
-&lt;p&gt;Atlast it was very holy trip but missed three temples according to our plan….&lt;/p&gt;
-
-&lt;p&gt;Another weekend spent seeking the blessing of lords:)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; To be completed&lt;/code&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 10 Jul 2014 19:17:04 +0530</pubDate>
-        <link>http://blog.balaaagi.me/blog/trip-to-kumbakonam-july-2014</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/blog/trip-to-kumbakonam-july-2014</guid>
+        <pubDate>Sat, 05 Mar 2016 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/omscs/2016/03/05/uloptimizationlesson1/</link>
+        <guid isPermaLink="true">http://localhost:4000/omscs/2016/03/05/uloptimizationlesson1/</guid>
       </item>
     
       <item>
-        <title>Trip to Kumbakonam July 2014</title>
-        <description>&lt;p&gt;This trip was planned initially to transfer some goods but later dropped off. We again planned for the trip over the first weekend of July 2014.
-Our initial plan was to see all the &lt;a href=&quot;http://en.wikipedia.org/wiki/Navagraha_temples&quot;&gt;Navagraha Temples&lt;/a&gt; kinda of little holy trip:P&lt;/p&gt;
+        <title>Supervised Learning - Till Date</title>
+        <description>&lt;p&gt;In the lecture series so far in the Supervised Learning we have learnt the various topics as below&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Travellers&lt;/strong&gt;- &lt;a href=&quot;www.balaaagi.me&quot;&gt;Myself&lt;/a&gt;,&lt;a href=&quot;https://www.facebook.com/komahanpaulraj&quot;&gt;Ko&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/dinesh.rajee.7&quot;&gt;Dinesh&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/profile.php?id=1781440509&quot;&gt;Manoj&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;Mode&lt;/strong&gt;-Road by Maruti Swift&lt;/p&gt;
+&lt;h2 id=&quot;neural-networks&quot;&gt;Neural Networks&lt;/h2&gt;
+&lt;h2 id=&quot;ensemble-learning---boosting&quot;&gt;Ensemble Learning - Boosting&lt;/h2&gt;
+&lt;h2 id=&quot;svms-or-kernal-methods&quot;&gt;SVMS or Kernal Methods&lt;/h2&gt;
+&lt;h2 id=&quot;computation-learning-theory&quot;&gt;Computation Learning Theory&lt;/h2&gt;
+&lt;h2 id=&quot;vc-dimensions&quot;&gt;VC Dimensions&lt;/h2&gt;
+&lt;h2 id=&quot;bayesian-learning&quot;&gt;Bayesian Learning&lt;/h2&gt;
+&lt;h2 id=&quot;bayesian-inference&quot;&gt;Bayesian Inference&lt;/h2&gt;
 
-&lt;p&gt;As part of the initial planning I researched on the routes for the temples from Kumbakonam. The first search result provided some good map route which seems to cover the whole &lt;a href=&quot;http://en.wikipedia.org/wiki/Kumbakonam&quot;&gt;Kumbakonam district&lt;/a&gt;.&lt;a href=&quot;http://kumbakonamtemples.in/navagraha-temple-route-maps.html&quot;&gt;This link&lt;/a&gt; was what we had as base for our trip.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Trip Day 1- July 5, 2014&lt;/strong&gt;&lt;br /&gt;
-I packed myself for the trip took my Mac also along with since had few assignments that need to be completed thought would finish over the travel in car. We started around 6:30 AM as usual we delayed by half an hour leading us to drop in total plan. Our first stop was near &lt;a href=&quot;http://en.wikipedia.org/wiki/Madras_Export_Processing_Zone&quot;&gt;MEPZ&lt;/a&gt; for breakfast. We had our breakfast in GK hotel which is famous in GST road.
-After the breakfast it time to burn the tyres. Dinesh was driving at consistent speed. We had a confusion on whether to reach Kumbakonam via Koliyanur Road or via Pondy–&amp;gt; Chidambaram…
-Later we confirmed that we will proceed with Pondy Route. But near Tindivanam we missed a left which made us to roam for another 1 hr. 
-Later we took Mailam road and reached Kallanai.
-In the meantime our mobile charges went down and the charger connected with the car does not charge the mobile phone.
-So we were lost. Later we tethered the internet from another mobile used by Mac to find the map route and proceeded. It was around 1:30 by the time when we reached Kumbakonam.
-We refreshed ourselves at Ko’s brother &lt;a href=&quot;https://www.facebook.com/palesh.paulraj&quot;&gt;Palesh&lt;/a&gt; anna’s residence and proceeded with our plan. But now our plan changed due to timings.&lt;/p&gt;
-
-&lt;p&gt;So we headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Brihadeeswarar_Temple&quot;&gt;Tanjore Big Temple&lt;/a&gt; which is around 40kms from Kumbakonam. We reached there before the sunset and we were able to view the temple towers in sunlight. Later we headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Kailasanthar_Temple,Thingalur&quot;&gt;Thingalur Moon Temple&lt;/a&gt; which was 14 km in North from the Big temple. By the time we reached there it was almost 6-7. Later we moved towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Swaminathaswamy_Temple,_Swamimalai&quot;&gt;Swamimalai&lt;/a&gt; . It started to rain heavily when we came out after offering our prayers. We halted for a while and started and headed towards Kumbakonam. 
-It was raining heavily in Kumbakonam. Also the streets of Kumbakonam were flooded. Whatever routes we took to reach the residence for sure car would start to float. Water level were so high. We were roaming for all routes like this for an hour. After which we somehow found a street and drove fast to our street. In the street there was no flood it was little elevated compared to other streets. We escaped:P&lt;/p&gt;
-
-&lt;p&gt;After we reached home all started to sleep since we have to start early next day. But I have not completed my code assignments hence was awake until aroun 1:00 AM and slept afterwards. It was raining till that time.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Trip Day 2- July 6 ,2014&lt;/strong&gt;&lt;br /&gt;
-We still have 8 more temples to see due to the change in plan and we have almost half a day since we have to head towards Chennai by atleast 3:00 PM. So we started early around 6:00 AM.
-We headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Thirunageswaram&quot;&gt;Rahu Temple&lt;/a&gt;. We finished there and visited the nearby &lt;a href=&quot;http://en.wikipedia.org/wiki/Uppiliappan_Temple&quot;&gt;Uppulipian Temple&lt;/a&gt;.The temple was closed until 9:00 AM due to some rituals. Hence we came out and had our breakfast to check whether as said by facts “all food outside the temple will not have salt!!”
-Later when the temple is opened for darshan we prayed and started from there to &lt;a href=&quot;http://en.wikipedia.org/wiki/Apatsahayesvarar_Temple,_Alangudi&quot;&gt;Jupiter Temple&lt;/a&gt;. From there we visited the &lt;a href=&quot;http://en.wikipedia.org/wiki/Suryanar_Kovil&quot;&gt;Sun Temple&lt;/a&gt; and later the &lt;a href=&quot;http://en.wikipedia.org/wiki/Agniswarar_Temple,_Kanjanur&quot;&gt;Venus Temple&lt;/a&gt;.
-It was almost lunch time. From there we headed towards &lt;a href=&quot;http://en.wikipedia.org/wiki/Vaitheeswaran_Koil&quot;&gt;Vaiteeswaran Temple&lt;/a&gt;. On our way we had tugs with a local for hitting our car. It took us some time.
-By the time we reached the temple, they were about to close the premises for lunch time.We quickly prayed and came out before they close the temple.
-The place was famous for &lt;a href=&quot;http://en.wikipedia.org/wiki/Naadi&quot;&gt;Nadi Astrology&lt;/a&gt; and few of them were seeing it after we had our lunch. It was around 2 when we started back to Kumbakonam and within few minutes we started back to Chennai.
-This time we came via Koliyanur route which was pretty simple and clear. Throughout our journey towards Chennai we were being accompanied by heavy rain.&lt;/p&gt;
-
-&lt;p&gt;Atlast it was very holy trip but missed three temples according to our plan….&lt;/p&gt;
-
-&lt;p&gt;Another weekend spent seeking the blessing of lords:)&lt;/p&gt;
-</description>
-        <pubDate>Thu, 10 Jul 2014 19:17:04 +0530</pubDate>
-        <link>http://blog.balaaagi.me/trip-to-kumbakonam-july-2014</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/trip-to-kumbakonam-july-2014</guid>
-      </item>
-    
-      <item>
-        <title>March 2014 Devlogs</title>
-        <description>&lt;p&gt;The month started with plan to learn &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. With little knowledgable in javascript was very much reluctant or does not have much confident in starting or diving into node.&lt;/p&gt;
-
-&lt;p&gt;So initially thought of downloading some ebooks and just follow what they have said.
-But later thought let us do it with a simple project.&lt;/p&gt;
-
-&lt;p&gt;So my long idea of saving the links I visited to a place for future reference is the project I choosed. But where to start?&lt;/p&gt;
-
-&lt;p&gt;Help came in hand with this &lt;a href=&quot;http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The tutorial has a simple app to store user id and email id in mongo db and retrieve and show to users.&lt;/p&gt;
-
-&lt;p&gt;So instead of using that I made my idea live.&lt;/p&gt;
-
-&lt;p&gt;Step 1 was installation which I had done a year back with eagerness to learn node. So basic node with npm is already installed.&lt;/p&gt;
-
-&lt;p&gt;Step 2 was to install &lt;a href=&quot;http://expressjs.com/&quot;&gt;express&lt;/a&gt;. I learnt that it is web application framework for single and multi page web applications.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;npm install -g express&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Step 3 Create Basic Express application by simple command.
-&lt;code&gt;express --sessions mylinks&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Step 4 Adding the dependencies.
-       Whatever I am gonna use it in my application all the related dependencies must be configured here(I have written it under my way of understanding)
-Done in the file that is being created as part of express routine.
-&lt;code&gt;package.json&lt;/code&gt;
-This was my initial config in package.json&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;name&quot;: &quot;MyLinks&quot;,
-  &quot;version&quot;: &quot;0.0.1&quot;,
-  &quot;private&quot;: true,
-  &quot;scripts&quot;: {
-    &quot;start&quot;: &quot;node app.js&quot;
-  },
-  &quot;dependencies&quot;: {
-    &quot;express&quot;: &quot;3.4.8&quot;,
-    &quot;jade&quot;: &quot;*&quot;,
-    &quot;mongodb&quot;:&quot;*&quot;,
-    &quot;monk&quot;:&quot;*&quot;
-  }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here &lt;a href=&quot;https://github.com/LearnBoost/monk&quot;&gt;monk&lt;/a&gt; is used for accessing MongoDB from Node.js.&lt;/p&gt;
-
-&lt;p&gt;With initial learning about Mongo DB queries using &lt;a href=&quot;https://education.mongodb.com&quot;&gt;MongoDB University&lt;/a&gt; was easily able to insert and retrieve data from MongoDB collections.&lt;/p&gt;
-
-&lt;p&gt;Had the difficulty in understanding the how Node.js application works.&lt;/p&gt;
-
-&lt;p&gt;Then got a grap of it. Let me put in my works of understanding.&lt;/p&gt;
-
-&lt;p&gt;All the neccesary dependencise will be included using &lt;code&gt;require&lt;/code&gt;.
-An object of &lt;code&gt;express&lt;/code&gt; is mainly used for routing.
-Based on the url with which the object being used the corresponding routes are used and provide the response.
-To access the database db objects which are created using monk are passed to the routes function. 
-From the routes function corresponding jade which is the layouts being rendered to the users.&lt;/p&gt;
-
-&lt;p&gt;With intial Setup and code written I was able to select the data from the db and display. But had issues while displaying with JADE. The indentations made it worse.&lt;/p&gt;
-
-&lt;p&gt;Then the next feature of adding links to the db.
-Created a simple form using JADE and on submit called a url which inturn has the neccesary the logic to store in db by getting values from the request.&lt;/p&gt;
-
-&lt;p&gt;Then added the feature for having tags to the links.
-We can store array of mutiple values to a column(field) in MongoDB since it is similar to JSON.&lt;/p&gt;
-
-&lt;p&gt;So stored the tags in the way. Retrieving and displaying again got some trouble with JADE. Used for loop to fetch all the links and for each link had a for loop for all the tags within it. Again indentation problem arised but fixed with option in Sublime to convert spaces to indentations.&lt;/p&gt;
-
-&lt;p&gt;Now adding the tags had a problem. How the user will add the tags. We cannot be sure of how many tags can a link be associated with. Hence planned to get user input with comma separated. And fetched the field value and split it using commas and store in array and passed to addlink route.
-&lt;code&gt;tags=req.body.tags.split(&quot;,&quot;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Later want to try another driver used for accessing MongoDB from Node.js. It was &lt;a href=&quot;https://www.npmjs.org/package/mongoskin&quot;&gt;mongoskin&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Modified the package.json&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-{
-  &quot;name&quot;: &quot;MyLinks&quot;,
-  &quot;version&quot;: &quot;0.0.1&quot;,
-  &quot;private&quot;: true,
-  &quot;scripts&quot;: {
-    &quot;start&quot;: &quot;node app.js&quot;
-  },
-  &quot;dependencies&quot;: {
-    &quot;express&quot;: &quot;3.4.8&quot;,
-    &quot;jade&quot;: &quot;*&quot;,
-    &quot;mongodb&quot;:&quot;*&quot;,
-    &quot;mongoskin&quot;:&quot;*&quot;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The db object creation part differs from that of monk.&lt;/p&gt;
-
-&lt;p&gt;Also the way in which collections are accessed are also differnt. Hence modified the changes.
-Added links between the pages.
-My first web application with Node.js,MongoDB,Express and Jade is done.
-Find the code in below path
-&lt;a href=&quot;https://github.com/balaaagi/MyLinks&quot;&gt;https://github.com/balaaagi/MyLinks&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Few more features to be added in coming weeks.&lt;/p&gt;
-
-&lt;p&gt;It was too slow to complete this learning itself. Hope I pick the pace soon…&lt;/p&gt;
+&lt;p&gt;Almost ready for the midterm. But need to learn various proofs or examples from the Textbook to getter better understanding.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 30 Mar 2014 23:57:55 +0530</pubDate>
-        <link>http://blog.balaaagi.me/blog/march-2014-devlogs</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/blog/march-2014-devlogs</guid>
-      </item>
-    
-      <item>
-        <title>March 2014 Devlogs</title>
-        <description>&lt;p&gt;The month started with plan to learn &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. With little knowledgable in javascript was very much reluctant or does not have much confident in starting or diving into node.&lt;/p&gt;
-
-&lt;p&gt;So initially thought of downloading some ebooks and just follow what they have said.
-But later thought let us do it with a simple project.&lt;/p&gt;
-
-&lt;p&gt;So my long idea of saving the links I visited to a place for future reference is the project I choosed. But where to start?&lt;/p&gt;
-
-&lt;p&gt;Help came in hand with this &lt;a href=&quot;http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The tutorial has a simple app to store user id and email id in mongo db and retrieve and show to users.&lt;/p&gt;
-
-&lt;p&gt;So instead of using that I made my idea live.&lt;/p&gt;
-
-&lt;p&gt;Step 1 was installation which I had done a year back with eagerness to learn node. So basic node with npm is already installed.&lt;/p&gt;
-
-&lt;p&gt;Step 2 was to install &lt;a href=&quot;http://expressjs.com/&quot;&gt;express&lt;/a&gt;. I learnt that it is web application framework for single and multi page web applications.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;npm install -g express&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Step 3 Create Basic Express application by simple command.
-&lt;code&gt;express --sessions mylinks&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Step 4 Adding the dependencies.
-       Whatever I am gonna use it in my application all the related dependencies must be configured here(I have written it under my way of understanding)
-Done in the file that is being created as part of express routine.
-&lt;code&gt;package.json&lt;/code&gt;
-This was my initial config in package.json&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &quot;name&quot;: &quot;MyLinks&quot;,
-  &quot;version&quot;: &quot;0.0.1&quot;,
-  &quot;private&quot;: true,
-  &quot;scripts&quot;: {
-    &quot;start&quot;: &quot;node app.js&quot;
-  },
-  &quot;dependencies&quot;: {
-    &quot;express&quot;: &quot;3.4.8&quot;,
-    &quot;jade&quot;: &quot;*&quot;,
-    &quot;mongodb&quot;:&quot;*&quot;,
-    &quot;monk&quot;:&quot;*&quot;
-  }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here &lt;a href=&quot;https://github.com/LearnBoost/monk&quot;&gt;monk&lt;/a&gt; is used for accessing MongoDB from Node.js.&lt;/p&gt;
-
-&lt;p&gt;With initial learning about Mongo DB queries using &lt;a href=&quot;https://education.mongodb.com&quot;&gt;MongoDB University&lt;/a&gt; was easily able to insert and retrieve data from MongoDB collections.&lt;/p&gt;
-
-&lt;p&gt;Had the difficulty in understanding the how Node.js application works.&lt;/p&gt;
-
-&lt;p&gt;Then got a grap of it. Let me put in my works of understanding.&lt;/p&gt;
-
-&lt;p&gt;All the neccesary dependencise will be included using &lt;code&gt;require&lt;/code&gt;.
-An object of &lt;code&gt;express&lt;/code&gt; is mainly used for routing.
-Based on the url with which the object being used the corresponding routes are used and provide the response.
-To access the database db objects which are created using monk are passed to the routes function. 
-From the routes function corresponding jade which is the layouts being rendered to the users.&lt;/p&gt;
-
-&lt;p&gt;With intial Setup and code written I was able to select the data from the db and display. But had issues while displaying with JADE. The indentations made it worse.&lt;/p&gt;
-
-&lt;p&gt;Then the next feature of adding links to the db.
-Created a simple form using JADE and on submit called a url which inturn has the neccesary the logic to store in db by getting values from the request.&lt;/p&gt;
-
-&lt;p&gt;Then added the feature for having tags to the links.
-We can store array of mutiple values to a column(field) in MongoDB since it is similar to JSON.&lt;/p&gt;
-
-&lt;p&gt;So stored the tags in the way. Retrieving and displaying again got some trouble with JADE. Used for loop to fetch all the links and for each link had a for loop for all the tags within it. Again indentation problem arised but fixed with option in Sublime to convert spaces to indentations.&lt;/p&gt;
-
-&lt;p&gt;Now adding the tags had a problem. How the user will add the tags. We cannot be sure of how many tags can a link be associated with. Hence planned to get user input with comma separated. And fetched the field value and split it using commas and store in array and passed to addlink route.
-&lt;code&gt;tags=req.body.tags.split(&quot;,&quot;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Later want to try another driver used for accessing MongoDB from Node.js. It was &lt;a href=&quot;https://www.npmjs.org/package/mongoskin&quot;&gt;mongoskin&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Modified the package.json&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-{
-  &quot;name&quot;: &quot;MyLinks&quot;,
-  &quot;version&quot;: &quot;0.0.1&quot;,
-  &quot;private&quot;: true,
-  &quot;scripts&quot;: {
-    &quot;start&quot;: &quot;node app.js&quot;
-  },
-  &quot;dependencies&quot;: {
-    &quot;express&quot;: &quot;3.4.8&quot;,
-    &quot;jade&quot;: &quot;*&quot;,
-    &quot;mongodb&quot;:&quot;*&quot;,
-    &quot;mongoskin&quot;:&quot;*&quot;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The db object creation part differs from that of monk.&lt;/p&gt;
-
-&lt;p&gt;Also the way in which collections are accessed are also differnt. Hence modified the changes.
-Added links between the pages.
-My first web application with Node.js,MongoDB,Express and Jade is done.
-Find the code in below path
-&lt;a href=&quot;https://github.com/balaaagi/MyLinks&quot;&gt;https://github.com/balaaagi/MyLinks&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Few more features to be added in coming weeks.&lt;/p&gt;
-
-&lt;p&gt;It was too slow to complete this learning itself. Hope I pick the pace soon…&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 30 Mar 2014 23:57:55 +0530</pubDate>
-        <link>http://blog.balaaagi.me/march-2014-devlogs</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/march-2014-devlogs</guid>
-      </item>
-    
-      <item>
-        <title>My look Ahead for 2014</title>
-        <description>&lt;h4 id=&quot;updated-on-august-3-2014&quot;&gt;UPDATED ON AUGUST 3, 2014&lt;/h4&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Yes as the title says the post is about my plan(rough one) for 2014. Usually at the start of the year I plan and think to do lot of things but this year I am going to be very serious is making it up. Below are the list of things that I have planned to do in this year without failing. I will be striking out the things once I have completed it. This post will be regularly updated.&lt;/p&gt;
-
-&lt;p&gt;*Spend More time with family&lt;br /&gt;
-*Do only things that make me feel happy in job&lt;br /&gt;
-*Read &lt;a href=&quot;https://www.goodreads.com/user_challenges/1128111&quot;&gt;30 Books&lt;/a&gt; for the year.&lt;br /&gt;
-*~~Go the Bachelor’s dream place in India -&lt;a href=&quot;https://www.google.co.in/search?q=goa&amp;amp;espv=210&amp;amp;es_sm=119&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ei=jqkAU5zVE8amrAfFoIGwBw&amp;amp;ved=0CAoQ_AUoAg&amp;amp;biw=1278&amp;amp;bih=629#q=goa&amp;amp;tbm=isch&amp;amp;imgdii=_&quot;&gt;Goa&lt;/a&gt;~~&lt;br /&gt;
-*Eat Breakfast, lunch &amp;amp; dinner on time without fail&lt;br /&gt;
-*Go for Mid Sea Diving @ &lt;a href=&quot;https://www.google.co.in/search?q=mid+sea+diving+kovalam&amp;amp;espv=210&amp;amp;es_sm=119&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ei=hKoAU4mlIMWHrQeRtoDQCg&amp;amp;ved=0CAoQ_AUoAg&amp;amp;biw=1278&amp;amp;bih=629&quot;&gt;Kovalam&lt;/a&gt;&lt;br /&gt;
-*Go for minimum 3 Treks this year&lt;br /&gt;
-*Learn to Swim&lt;br /&gt;
-*Learn to drive 4 Wheeler&lt;br /&gt;
-*Partipate in local Marathon and try completing 10K mark&lt;br /&gt;
-*Try completing atleast one online course per two months in any of MOOCS platform(&lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;/&lt;a href=&quot;https://www.coursera.org&quot;&gt;Courseera&lt;/a&gt;/&lt;a href=&quot;https://www.edx.org/&quot;&gt;edX&lt;/a&gt;/&lt;a href=&quot;http://academicearth.org/&quot;&gt;Academic Earth&lt;/a&gt;)&lt;br /&gt;
-*Contribute to a Open Source Project effectively&lt;br /&gt;
-*Participate in lot of Hackathons and build more&lt;br /&gt;
-*Try to give a tech talk in some meetup&lt;br /&gt;
-*Become a &lt;a href=&quot;http://www.omscs.gatech.edu/&quot;&gt;GT OMSCS&lt;/a&gt; Student&lt;br /&gt;
-*Apply to Hacker School and try getting admitted
-&lt;br /&gt;
-The above are the list which  I have prepared when I start the year. Anything or any additional things I want to include in the list I will add after the below line. Keeping my finger crossed to achieve 100% in the above list.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 02 Jan 2014 17:19:55 +0530</pubDate>
-        <link>http://blog.balaaagi.me/my-look-ahead-for-2014</link>
-        <guid isPermaLink="true">http://blog.balaaagi.me/my-look-ahead-for-2014</guid>
+        <pubDate>Sat, 27 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/omscs/2016/02/27/supervisedlearning/</link>
+        <guid isPermaLink="true">http://localhost:4000/omscs/2016/02/27/supervisedlearning/</guid>
       </item>
     
   </channel>
