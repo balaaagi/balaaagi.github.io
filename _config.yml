@@ -16,7 +16,7 @@ header_pages:
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics:
+google_analytics: UA-46812137-1
 google_tag_manager:
 # Bing services
 bing_verification:
@@ -61,7 +61,7 @@ twitter_username:
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username:
+linkedin_username: balaaagi
 angellist_username:
 medium_id:
 bitcoin_url:
@@ -79,9 +79,9 @@ share_googleplus: false
 share_linkedin: true
 share_digg: false
 share_tumblr: false
-share_reddit: true
+share_reddit: false
 share_stumbleupon: false
-share_hackernews: true
+share_hackernews: false
 
 text:
   pagination:
@@ -121,7 +121,7 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     4
+paginate:     6
 sass:
   style: compressed
 plugins:

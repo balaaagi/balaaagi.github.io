@@ -7,6 +7,74 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>My Look Ahead for 2018</title>
+        <description>&lt;p&gt;Inspired by others in developer community where people keep yearly goals and work towards them wanted to have something personal to me and keep track of my progress. I have shared this with my friends/mentor whom I feel will give proper feedback to improve myself. The categories of rating below helps my mentor to rate me frequently where I stand.&lt;/p&gt;
+
+&lt;p&gt;Have a made a public &lt;a href=&quot;https://trello.com/b/f5f9gR3N/better-me-2018&quot;&gt;trello board&lt;/a&gt; where they can track my progress.&lt;/p&gt;
+
+&lt;p&gt;Looking forward for a great year ahead..&lt;/p&gt;
+
+&lt;h2 id=&quot;personal-goals&quot;&gt;Personal Goals&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spend More Time With Family&lt;/li&gt;
+  &lt;li&gt;Learn Four Wheeler Driving and Get License&lt;/li&gt;
+  &lt;li&gt;Make a trip to new place&lt;/li&gt;
+  &lt;li&gt;Eat Healthy,Stay Fit,Be Healthy&lt;/li&gt;
+  &lt;li&gt;Improve  beliefs in god - more prayers,self healing time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;personal-development-soft-skills&quot;&gt;Personal Development Soft Skills&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Blogging &lt;code class=&quot;highlighter-rouge&quot;&gt;Write a blog on either book/trip/something in tech weekly&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Reading &lt;code class=&quot;highlighter-rouge&quot;&gt;Read Good Reads Target(Fiction/Non Fiction/Tech)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;categories-of-rating&quot;&gt;Categories of Rating&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Consistent&lt;/li&gt;
+  &lt;li&gt;Excited and show improvement&lt;/li&gt;
+  &lt;li&gt;Professional&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;development-community-skills&quot;&gt;Development Community Skills&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Present in Conferences&lt;/li&gt;
+  &lt;li&gt;Watch Existing Conferences Videos and write blog on what lesson have I learnt from it&lt;/li&gt;
+  &lt;li&gt;Open Source Personal Projects Contributions 4-5 Useful Commits per week&lt;/li&gt;
+  &lt;li&gt;Open Source project contributions with many users&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;categories-of-rating-1&quot;&gt;Categories of Rating&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Amateaur Contributor&lt;/li&gt;
+  &lt;li&gt;Internal Impact - Does my contribution makes me happy&lt;/li&gt;
+  &lt;li&gt;External Impact - Does my contribution makes the community happy&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;consultingarchitecture&quot;&gt;Consulting/Architecture&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;MicroServices Architecture as Skill&lt;/li&gt;
+  &lt;li&gt;Mobile Development as Skill &lt;code class=&quot;highlighter-rouge&quot;&gt;Native Android &amp;amp; Mobile Web&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Cloud Infrastructure as Skill - AWS&lt;/li&gt;
+  &lt;li&gt;Code Hygiene - Unit Testing Frameworks&lt;/li&gt;
+  &lt;li&gt;CI/CD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;categories-of-rating-2&quot;&gt;Categories of Rating&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Basics Amateaur&lt;/li&gt;
+  &lt;li&gt;Solutionize for anything&lt;/li&gt;
+  &lt;li&gt;Drive Individually for Any Project&lt;/li&gt;
+  &lt;li&gt;BootStrapping a team and Running It&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 23 Jan 2018 07:40:00 +0530</pubDate>
+        <link>http://localhost:4000/2018/01/23/my-look-ahead-for-2018/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/23/my-look-ahead-for-2018/</guid>
+      </item>
+    
+      <item>
         <title>Devlog November 2017</title>
         <description>&lt;p&gt;Writing Devlogs after so many months. Learning a new programming language is always fun. This time have started learning &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; for a new project. With Focussed on craftsmanship principles have started learning with &lt;a href=&quot;https://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;TDD&lt;/a&gt;.&lt;/p&gt;
 
@@ -397,26 +465,6 @@ Hence policy can be defined as the factors of both states and times
         <pubDate>Sat, 05 Mar 2016 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/omscs/2016/03/05/uloptimizationlesson1/</link>
         <guid isPermaLink="true">http://localhost:4000/omscs/2016/03/05/uloptimizationlesson1/</guid>
-      </item>
-    
-      <item>
-        <title>Supervised Learning - Till Date</title>
-        <description>&lt;p&gt;In the lecture series so far in the Supervised Learning we have learnt the various topics as below&lt;/p&gt;
-
-&lt;h2 id=&quot;neural-networks&quot;&gt;Neural Networks&lt;/h2&gt;
-&lt;h2 id=&quot;ensemble-learning---boosting&quot;&gt;Ensemble Learning - Boosting&lt;/h2&gt;
-&lt;h2 id=&quot;svms-or-kernal-methods&quot;&gt;SVMS or Kernal Methods&lt;/h2&gt;
-&lt;h2 id=&quot;computation-learning-theory&quot;&gt;Computation Learning Theory&lt;/h2&gt;
-&lt;h2 id=&quot;vc-dimensions&quot;&gt;VC Dimensions&lt;/h2&gt;
-&lt;h2 id=&quot;bayesian-learning&quot;&gt;Bayesian Learning&lt;/h2&gt;
-&lt;h2 id=&quot;bayesian-inference&quot;&gt;Bayesian Inference&lt;/h2&gt;
-
-&lt;p&gt;Almost ready for the midterm. But need to learn various proofs or examples from the Textbook to getter better understanding.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 27 Feb 2016 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/omscs/2016/02/27/supervisedlearning/</link>
-        <guid isPermaLink="true">http://localhost:4000/omscs/2016/02/27/supervisedlearning/</guid>
       </item>
     
   </channel>
