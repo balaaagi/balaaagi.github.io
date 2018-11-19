@@ -4,7 +4,7 @@ email:       balaaagi@gmail.com
 author:      Balaji Srinivasan
 description: "Blog about software engineering , learning and my life"
 baseurl:     ""
-url:         "http://blog.balaaagi.me"
+url:         "http://blog.balaaagi.in"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
