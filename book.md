@@ -10,6 +10,7 @@ This a collections of books I have read until now
 - [97 Things Every Programmer Should Know: Collective Wisdom from the Experts](https://www.goodreads.com/book/show/7003902-97-things-every-programmer-should-know), by Kevlin Henney
 - [Building Data Science Teams ](https://www.goodreads.com/book/show/12700492-building-data-science-teams) , by D J Patil
 - [The Ruby Programming Language](https://www.goodreads.com/book/show/2485075.The_Ruby_Programming_Language), by David Flanagan, Yukihiro Matsumoto, Why The Lucky Stiff
+- [Talking With Tech Leads ](https://www.goodreads.com/book/show/23270194-talking-with-tech-leads), by Patrick Kua
 <h2>Fiction</h2>
 - [The Sense of an Ending](https://www.goodreads.com/book/show/10746542-the-sense-of-an-ending), by Julian Barnes
 - [Life is What You Make it](https://www.goodreads.com/book/show/10863941-life-is-what-you-make-it), by Preeti Shenoy
