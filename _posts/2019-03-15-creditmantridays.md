@@ -11,8 +11,9 @@ After a stint of almost 7+ years developing enterprise software wanted to work w
 	* Experience the Software Cycle in a fast paced environment
 
 Joined [CreditMantri](https://www.creditmantri.com/) on November 2017 as an `Engineer`. Always love to call myself as an engineer compared to the designations. Lot of questions going in the mind
+
 	* Will I be able to survive in the startup culture after having a comfort ride with corporates?
-	* Have no prior knowledge in the programming language used here? How people is going to adapt me into the situation.
+	* Have less knowledge in the programming stack used here? How people is going to adapt me into the situation.
 
 
 Even though I have no prior experience in the programming language but have good exposure to the architecture and the database used. Hence from day one started looking into the code base. 
