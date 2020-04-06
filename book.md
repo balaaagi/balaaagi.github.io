@@ -25,7 +25,8 @@ This a collections of books I have read until now
 - [Five Point Someone](https://www.goodreads.com/book/show/105576.Five_Point_Someone), by Chetan Bhagat
 - [Two States](https://www.goodreads.com/book/show/6969361-2-states), by Chetan Bhagat
 - [To Kill a Mockingbird](https://www.goodreads.com/book/show/8045416-to-kill-a-mockingbird), by Harper Lee
-- [The One You Cannot Have](https://www.goodreads.com/book/show/18657122-the-one-you-cannot-have), by Preeti Shenoy 
+- [The One You Cannot Have](https://www.goodreads.com/book/show/18657122-the-one-you-cannot-have), by Preeti Shenoy
+- [Goat Days](https://www.goodreads.com/book/show/15849749-goat-days), by Benyamin, Joseph Koyippally (Translator) 
 
 <h2>Non Fiction</h2>
 - [The Monk Who Sold his Ferrari](https://www.goodreads.com/book/show/23002737-the-monk-who-sold-his-ferrari), by Robin Sharma
@@ -34,6 +35,7 @@ This a collections of books I have read until now
 - [Outliers: The Story of Success](https://www.goodreads.com/book/show/3228917-outliers), by Malcolm Gladwell
 - [The End of Karma: Hope and Fury Among India's Young](https://www.goodreads.com/book/show/30823292-the-end-of-karma), by Somini Sengupta
 - [Zero to One: Notes on Startups, or How to Build the Future](https://www.goodreads.com/book/show/18050143-zero-to-one), by Peter Thiel,Blake Masters
+- [Ikigai: The Japanese Secret to a Long and Happy Life](https://www.goodreads.com/book/show/39995046-ikigai), by Hector Garcia Puigcerver, Francesc Miralles 
 
 <h2>Bio</h2>
 - [Steve Jobs](https://www.goodreads.com/book/show/11084145-steve-jobs), by Walter Issacson
