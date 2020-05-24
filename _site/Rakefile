@@ -32,6 +32,7 @@ end
 # usage: rake draft['my new draft']
 desc 'create a new draft post with "rake draft[\'draft title\']"'
 task :draft, :title do |t, args|
+  puts "Args #{args}"
   if args.title
     title = args.title
   else
