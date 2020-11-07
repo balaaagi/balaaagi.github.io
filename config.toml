@@ -1,0 +1,91 @@
+baseURL = "https://balaaagi.in"
+languageCode = "en"
+DefaultContentLanguage = "en"
+title = "Balaji Srinivasan | balaaagi"
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+# Enable Disqus
+disqusShortname = "balajiblog"
+
+# Google Analytics
+googleAnalytics = "UA-46812137-1"
+
+
+
+[params]
+title = "BALAJI SRINIVASAN"
+author = "Balaji Srinivasan"
+description = "Hello folks, I'm Balaji. Currently living in Bangalore, love building things"
+profilePicture = "images/profile.jpg"
+keywords = ""
+favicon = "favicons/"
+customCss = []
+customJs = []
+mainSections = ["post","docs"]
+images = ["images/site-feature-image.png"]
+# Google Site Verification
+#googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/balaaagi/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/balaaagi"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "instagram"
+url = "https://twitter.com/balaaagi"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:balaaagi@gmail.com"
+
+## Menu items
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 1
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 2
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 5
+  identifier = "about"
+  url = "/about/"
+
+  [[menu.main]]
+  name = "Places"
+  weight = 4
+  identifier = "places"
+  url = "/places/"
+
+  [[menu.main]]
+  name = "Books"
+  weight = 3
+  identifier = "books"
+  url = "/books/"

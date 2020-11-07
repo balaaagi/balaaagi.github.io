@@ -1,0 +1,17 @@
+---
+layout: post
+title: Devlog
+date: 2015-12-15 00:32:41.000000000 +05:30
+type: devlogs
+date: 2015-12-15T00:00:00-00:00
+draft: false
+---
+
+
+
+* Worked on the logging and exceptions part of the reporting framework that I was developing in office
+* Read Log- Did not make any progress in this. Need to complete [Sachin Tendulkar -Playing it My Way](http://www.amazon.in/Sachin-Tendulkar-Playing-Way-Autobiography/dp/1473605202) atleast by this month
+
+#### Android LearnLog:
+* Learnt List View Creation, Adapter and ArrayAdapter by making progress on the SunShine App. 
+* Learnt Shortcuts of Android Studio in Mac
