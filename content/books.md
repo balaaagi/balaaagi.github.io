@@ -10,6 +10,7 @@ This a collections of books I have read until now
 
 ### Tech 
 - [97 Things Every Programmer Should Know: Collective Wisdom from the Experts](https://www.goodreads.com/book/show/7003902-97-things-every-programmer-should-know), by Kevlin Henney
+- [The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Wi](https://amzn.to/2JMyeHO), by Gene Kim, Kevin Behr, George Spafford
 - [Building Data Science Teams ](https://www.goodreads.com/book/show/12700492-building-data-science-teams) , by D J Patil
 - [The Ruby Programming Language](https://www.goodreads.com/book/show/2485075.The_Ruby_Programming_Language), by David Flanagan, Yukihiro Matsumoto, Why The Lucky Stiff
 - [Talking With Tech Leads ](https://www.goodreads.com/book/show/23270194-talking-with-tech-leads), by Patrick Kua
