@@ -3,6 +3,7 @@ title: "Simple State Machine In Java"
 date: 2020-10-06T18:21:37+05:30
 summary: "Implementing State Machines in Java"
 draft: false
+categories : [ "java"]
 ---
 
 # Simple State Machine in Java
